@@ -1,5 +1,19 @@
 # NEUS 642: Python Programming in Experimental Neuroscience
 
+<!-- vim-markdown-toc GFM -->
+
+* [Overview](#overview)
+* [Assessment](#assessment)
+	* [Grading](#grading)
+	* [Developing an exercise](#developing-an-exercise)
+* [Python](#python)
+	* [Python server](#python-server)
+	* [Installing Python](#installing-python)
+	* [Code editors](#code-editors)
+	* [Useful resources](#useful-resources)
+
+<!-- vim-markdown-toc -->
+
 ## Overview
 * Time: Tuesdays from 1 to 3pm during the fall 2018 semester (Sept. 25 through December 18).
 * Location: TBD
@@ -13,7 +27,6 @@ Teaching assistants:
 
 TBD.
 
-## Introduction
 NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
 Before we meet for the first time, please do the following:
@@ -26,13 +39,16 @@ Before we meet for the first time, please do the following:
 
 * Think about a dataset that you would like to work on for the class. At some point during the course, you will be asked to develop an exercise based on this dataset (either individually or in a small group of two or three). I may reach out to some of you in the weeks leading up to the course and ask you to prepare your exercise in advance so that we have exercises for the first few weeks of class.
 
-## Grading
+## Assessment
+
+### Grading
 This is a pass/no pass course with two credits. Grading will be based on the following:
 
 * Class attendance and participation in discussions
 * Preparation of an exercise for at least one session
 
-## Developing an exercise
+### Developing an exercise
+All exercises will follow the format established in the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp)(days 2 through 4).
 All material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
 You'll be asked to develop a two-hour exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [exajupyter server](https://exajupyter.ohsu.edu) as well as the [NEUS634 webpage](https://github.com/bburan/NEUS634) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that the packages can be installed before the class.
@@ -41,7 +57,7 @@ All exercises must contain sufficient background to the problem that gives your 
 
 First, identify a dataset you'd like to work with. If you need help identifying a dataset pertinent to your area of interest, please contact a TA or course instructor. The dataset should be of reasonable size (i.e., no 10 gigabyte confocal images). You may need to do some post-processing of the data to get the file down to a reasonable size.
 
-Next, think of a reasonable problem that you can walk the class through in two hours. The exercise should load the data, perform some processing and/or summary of the data and then plot the results. For examples of exercises in this format, see the ones developed for the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp) (days 2 through 4). 
+Next, think of a reasonable problem that you can walk the class through in two hours. The exercise should load the data, perform some processing and/or summary of the data and then plot the results. 
 
 Now, write the code to perform these steps and generate your plot. Once the code works, break it down into individual cells for a Jupyter Notebook. Above each code cell, add a Markdown cell explaining what's happening in the block below. Identify four or five cells that may serve as exercises. You'll remove the code from these cells and add some explanation above the blank cell instructing the class what problem needs to be solved before they can move onto the next step. They will then have 5-15 minutes (depending on the complexity of the problem) to try and figure out the code that solves the problem.
 
