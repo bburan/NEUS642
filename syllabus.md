@@ -98,8 +98,19 @@ You need a way to write Python code. The best way to do this is to use a dedicat
 * [JupyterLab](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906). This is the next-generation user interface for Jupyter and will likely supplant Jupyter's Notebook interface. It allows you to open multiple file types (including notebooks) side-by-side. Although this is still beta software, it will likely replace the standard Jupyter Notebook server by the end of 2018.
 
 ### Useful resources
+* Course-specific resources.
+
+    * [NEUS634 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. I will try to monitor this when I can. Use this for asking questions.
+	* [NEUS634 on Github](https://github.com/bburan/NEUS634) - The source code repository for the class. All new files and updates will be posted here.
+
+* Free Jupyter servers. You will have to get the data and notebooks you are working on uploaded to these servers. Computational performance on these servers may be slow, which is why we are using exajupyter instead despite the off-campus access complications.
+
+    * [Google Colab](https://colab.research.google.com) - Your notebooks and data will be stored on your personal Google Drive account.
+    * [Microsoft Azure Notebooks](https://notebooks.azure.com) - This one allows you to clone a Github repository, which makes it easier to pull in the NEUS634 resources from our Github repo, https://github.com/bburan/NEUS634.
+
 * Additional learning resources
     * [Python for Everybody](https://www.py4e.com/)
+	* [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp) - Various exercises in neuroscience from OHSU's NGP winter bootcamp.
 
 * Python documentation and help resources
     * [Documentation for Python](https://www.python.org/doc/)
@@ -120,4 +131,6 @@ You need a way to write Python code. The best way to do this is to use a dedicat
     * [Python for data analysis](http://shop.oreilly.com/product/0636920023784.do)
 
 * Getting help
-    * [Stack overflow](https://stackoverflow.com/)
+    * [Stack overflow](https://stackoverflow.com/) - You can post a question and will typically receive answers within a couple of hours.
+	* [Python Tutor Mailing list](https://mail.python.org/mailman/listinfo/tutor) - Once subscribed, you can post questions to the mailing list at tutor@python.org.
+	
