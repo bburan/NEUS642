@@ -51,7 +51,7 @@ This is a pass/no pass course with two credits. Grading will be based on the fol
 All exercises will follow the format established in the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp)(days 2 through 4).
 All material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
-You'll be asked to develop a two-hour exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [exajupyter server](https://exajupyter.ohsu.edu) as well as the [NEUS634 webpage](https://github.com/bburan/NEUS634) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that the packages can be installed before the class.
+You'll be asked to develop a two-hour exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [exajupyter server](https://exajupyter.ohsu.edu) as well as the [NEUS642 webpage](https://github.com/bburan/NEUS642) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that the packages can be installed before the class.
 
 All exercises must contain sufficient background to the problem that gives your classmates sufficient background to understand the problem. Your classmates are neuroscientists, but will need some additional, domain-specific knowledge to understand the problem. Do not skip this step, or you will lose your classmates!
 
@@ -100,8 +100,8 @@ You need a way to write Python code. The best way to do this is to use a dedicat
 ### Useful resources
 * Course-specific resources.
 
-    * [NEUS634 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. I will try to monitor this when I can. Use this for asking questions.
-	* [NEUS634 on Github](https://github.com/bburan/NEUS634) - The source code repository for the class. All new files and updates will be posted here.
+    * [NEUS642 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. I will try to monitor this when I can. Use this for asking questions.
+	* [NEUS642 on Github](https://github.com/bburan/NEUS642) - The source code repository for the class. All new files and updates will be posted here.
 
 * Open-source datasets
 
@@ -112,7 +112,7 @@ You need a way to write Python code. The best way to do this is to use a dedicat
 * Free Jupyter servers. You will have to get the data and notebooks you are working on uploaded to these servers. Computational performance on these servers may be slow, which is why we are using exajupyter instead despite the off-campus access complications.
 
     * [Google Colab](https://colab.research.google.com) - Your notebooks and data will be stored on your personal Google Drive account.
-    * [Microsoft Azure Notebooks](https://notebooks.azure.com) - This one allows you to clone a Github repository, which makes it easier to pull in the NEUS634 resources from our Github repo, https://github.com/bburan/NEUS634.
+    * [Microsoft Azure Notebooks](https://notebooks.azure.com) - This one allows you to clone a Github repository, which makes it easier to pull in the NEUS642 resources from our Github repo, https://github.com/bburan/NEUS642.
 
 * Additional learning resources
     * [Python for Everybody](https://www.py4e.com/)
