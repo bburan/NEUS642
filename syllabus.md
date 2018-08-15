@@ -10,7 +10,7 @@
 	* [Python server](#python-server)
 	* [Installing Python](#installing-python)
 	* [Code editors](#code-editors)
-	* [Useful resources](#useful-resources)
+* [Useful resources](#useful-resources)
 
 <!-- vim-markdown-toc -->
 
@@ -97,7 +97,7 @@ You need a way to write Python code. The best way to do this is to use a dedicat
 
 * [JupyterLab](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906). This is the next-generation user interface for Jupyter and will likely supplant Jupyter's Notebook interface. It allows you to open multiple file types (including notebooks) side-by-side. Although this is still beta software, it will likely replace the standard Jupyter Notebook server by the end of 2018.
 
-### Useful resources
+## Useful resources
 * Course-specific resources.
 
     * [NEUS642 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. I will try to monitor this when I can. Use this for asking questions.
