@@ -103,6 +103,12 @@ You need a way to write Python code. The best way to do this is to use a dedicat
     * [NEUS634 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. I will try to monitor this when I can. Use this for asking questions.
 	* [NEUS634 on Github](https://github.com/bburan/NEUS634) - The source code repository for the class. All new files and updates will be posted here.
 
+* Open-source datasets
+
+    * [Collaborative research in computational neuroscience](https://crcns.org/)
+	* [Comprehensive list of neuroscience databases](https://en.wikipedia.org/wiki/List_of_neuroscience_databases)
+	* [Data.gov](https://catalog.data.gov/dataset) - Although not specific to neuroscience, there are some neuroscience datasets available here). 
+
 * Free Jupyter servers. You will have to get the data and notebooks you are working on uploaded to these servers. Computational performance on these servers may be slow, which is why we are using exajupyter instead despite the off-campus access complications.
 
     * [Google Colab](https://colab.research.google.com) - Your notebooks and data will be stored on your personal Google Drive account.
