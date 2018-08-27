@@ -10,7 +10,8 @@
 	* [Python server](#python-server)
 	* [Installing Python](#installing-python)
 	* [Code editors](#code-editors)
-* [Useful resources](#useful-resources)
+	* [Course-specific resources](#course-specific-resources)
+	* [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 
@@ -49,7 +50,8 @@ This is a pass/no pass course with two credits. Grading will be based on the fol
 
 ### Developing an exercise
 All exercises will follow the format established in the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp)(days 2 through 4).
-All material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).
+
+Material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
 You'll be asked to develop a two-hour exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [exajupyter server](https://exajupyter.ohsu.edu) as well as the [NEUS642 webpage](https://github.com/bburan/NEUS642) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that the packages can be installed before the class.
 
@@ -67,7 +69,6 @@ Throughout the entire process, you will be expected to consult with the TAs and 
 All students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the fall semester such as those offered by [codecademy](URL=https%3a%2f%2fwww.codecademy.com%2flearn%2flearn-python) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.
 
 We will be using Python 3.6 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) will [no longer support Python 2 after 2020](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
-
 
 ### Python server
 There are several ways to write and run Python code. For this class, we will use [Jupyter notebooks](https://jupyter.org). Notebooks are documents that contain live code, equations, visualizations and narrative text. The notebooks will be hosted on OHSU's [exajupyter server](https://exajupyter.ohsu.edu) ([instructions for using the server](exajupyter.md)).
@@ -97,46 +98,12 @@ You need a way to write Python code. The best way to do this is to use a dedicat
 
 * [JupyterLab](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906). This is the next-generation user interface for Jupyter and will likely supplant Jupyter's Notebook interface. It allows you to open multiple file types (including notebooks) side-by-side. Although this is still beta software, it will likely replace the standard Jupyter Notebook server by the end of 2018.
 
-## Useful resources
-* Course-specific resources.
+### Course-specific resources
 
     * [NEUS642 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. I will try to monitor this when I can. Use this for asking questions.
 	* [NEUS642 on Github](https://github.com/bburan/NEUS642) - The source code repository for the class. All new files and updates will be posted here.
 
-* Open-source datasets
+### Other resources
 
-    * [Collaborative research in computational neuroscience](https://crcns.org/)
-	* [Comprehensive list of neuroscience databases](https://en.wikipedia.org/wiki/List_of_neuroscience_databases)
-	* [Data.gov](https://catalog.data.gov/dataset) - Although not specific to neuroscience, there are some neuroscience datasets available here). 
-
-* Free Jupyter servers. You will have to get the data and notebooks you are working on uploaded to these servers. Computational performance on these servers may be slow, which is why we are using exajupyter instead despite the off-campus access complications.
-
-    * [Google Colab](https://colab.research.google.com) - Your notebooks and data will be stored on your personal Google Drive account.
-    * [Microsoft Azure Notebooks](https://notebooks.azure.com) - This one allows you to clone a Github repository, which makes it easier to pull in the NEUS642 resources from our Github repo, https://github.com/bburan/NEUS642.
-
-* Additional learning resources
-    * [Python for Everybody](https://www.py4e.com/)
-	* [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp) - Various exercises in neuroscience from OHSU's NGP winter bootcamp.
-
-* Python documentation and help resources
-    * [Documentation for Python](https://www.python.org/doc/)
-    * [Documentation for Numpy](http://docs.scipy.org/doc/numpy/)
-    * [Documentation for Scipy](http://docs.scipy.org/doc/scipy/reference/)
-    * [Documentation for Matplotlib](http://matplotlib.org/contents.html)
-    * [Documentation for IPython](http://ipython.org/ipython-doc/stable/index.html)
-    * [Documentation for Pandas](http://pandas.pydata.org/pandas-docs/stable/)
-
-* Cheat sheets
-    * [Python quick reference](https://www.dataschool.io/python-quick-reference/)
-    * [Numpy for Matlab users (option 1)](http://mathesaurus.sourceforge.net/matlab-numpy.html)
-    * [Numpy for Matlab users (option 2)](http://mathesaurus.sourceforge.net/matlab-python-xref.pdf)
-    * [Python for data science](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf)
-
-* Books
-    * [Automate the boring stuff with Python](https://automatetheboringstuff.com/)
-    * [Python for data analysis](http://shop.oreilly.com/product/0636920023784.do)
-
-* Getting help
-    * [Stack overflow](https://stackoverflow.com/) - You can post a question and will typically receive answers within a couple of hours.
-	* [Python Tutor Mailing list](https://mail.python.org/mailman/listinfo/tutor) - Once subscribed, you can post questions to the mailing list at tutor@python.org.
-	
+There are many resources available online for learning Python. [Here are
+a few](resources.md).
