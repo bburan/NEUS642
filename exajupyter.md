@@ -18,13 +18,28 @@ Now, you need to configure your notebook environment to access the NEUS634 resou
 
 Run the setup script by typing the following text in the terminal and hitting `enter`:
 
-	sh /home/exacloud/lustre1/NEUS642/setup_env.sh
+	source /home/exacloud/lustre1/NEUS642/bin/NEUS642_setup
 
-If it's successful, you'll see the following message:
+If it's successful, you'll see the following messages (note that buran will be
+replaced with your username):
 
-	Installed kernelspec NEUS642 in /home/users/<your OHSU account>/.local/share/jupyter/kernels/neus642
+	Installing NEUS642 kernel
+	Installed kernelspec NEUS642 in /home/users/buran/.local/share/jupyter/kernels/neus642
+	Editing /home/users/buran/.bash_profile to include /home/exacloud/lustre1/NEUS642/bin in the path
 
-![successful setup screen](images/6_successful_setup.png)
+Now, copy the notebooks over to your home folder. We've created a shell script to support this. Run the script by typing the following text in the terminal and hitting `enter`:
+
+	NEUS642_update_notebooks
+
+The first time you run this script, you'll get a long list of messages starting and ending with the following lines (the `...` denotes the list of files that were transferred):
+
+	sending incremental file list
+	notebooks/
+	...
+	sent 391479274 bytes  received 2532 bytes  11686024.06 bytes/sec
+	total size is 391421880  speedup is 1.00
+
+After running this script, you now have a local copy of all the notebooks and data and can modify the notebooks as you see fit. Each week you will need to re-run this script before class to obtain a copy of the notebooks and data that will be used for that week. I will send an email once the notebooks are ready.
 
 Now, close your console by closing the browser tab. Go back to the first tab (or go back to https://exajupyter.ohsu.edu if you already closed the tab). You may have to hit refresh in your browser to force the server to load the NEUS634 resources. If you're successful, you will see a new folder called NEUS634 and a new option, NEUS634, will be available via the `New` drop-down menu. Ignore the perl5 folder. It's automatically created each time you open a terminal.
 
