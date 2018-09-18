@@ -16,12 +16,11 @@ Now, you need to configure your notebook environment to access the NEUS634 resou
 
 ![opening a terminal](images/4_opening_terminal.png)
 
-Run the setup script by typing the following text in the terminal and hitting `enter`:
+Run the setup script by typing the following text in the terminal and hitting `enter`. Be patient, this may take a while! The first time you login to exajupyter, scripts and programs may run a bit slowly until everything is loaded into memory. This is a limitation of the architecture that exajupyter is built on:
 
 	source /home/exacloud/lustre1/NEUS642/bin/NEUS642_setup
 
-If it's successful, you'll see the following messages (note that buran will be
-replaced with your username):
+If it's successful, you'll see the following messages (note that buran will be replaced with your username):
 
 	Installing NEUS642 kernel
 	Installed kernelspec NEUS642 in /home/users/buran/.local/share/jupyter/kernels/neus642
