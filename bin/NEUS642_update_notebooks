@@ -1,0 +1,1 @@
+rsync -a -v -L --ignore-existing --exclude='.ipynb_checkpoints*' /home/exacloud/lustre1/NEUS642/notebooks $HOME
