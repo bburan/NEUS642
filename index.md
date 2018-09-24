@@ -17,7 +17,7 @@
 
 ## Overview
 * Time: Tuesdays from 1 to 3pm during the fall 2018 semester (Sept. 25 through December 18).
-* Location: TBD
+* Location: Vollum 4M.
 
 Course directors:
 
@@ -26,7 +26,8 @@ Course directors:
 
 Teaching assistants:
 
-TBD.
+* Erik Burlingame (burlinge@ohsu.edu).
+* Charlie Heller (hellerc@ohsu.edu)
 
 NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
@@ -71,7 +72,7 @@ All students are expected to have a basic knowledge of programming. If you haven
 We will be using Python 3.6 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) will [no longer support Python 2 after 2020](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
 
 ### Python server
-There are several ways to write and run Python code. For this class, we will use [Jupyter notebooks](https://jupyter.org). Notebooks are documents that contain live code, equations, visualizations and narrative text. The notebooks will be hosted on OHSU's [exajupyter server](https://exajupyter.ohsu.edu) ([instructions for using the server](exajupyter.md)).
+There are several ways to write and run Python code. For this class, we will use [Jupyter notebooks](https://jupyter.org). Notebooks are documents that contain live code, equations, visualizations and narrative text. The notebooks will be hosted on OHSU's [exajupyter server](https://exajupyter.ohsu.edu) ([instructions for using the server](exajupyter.md), [instructions for logging in using a personal computer](citrix.md)).
 
 We will always make sure that the server contains the latest materials and third-party software required for completing the weekly project. If you choose to use your own copy of Python, will be responsible for installing third-party libraries and download new files (i.e., notebooks and datasets) to your computer before the start of class each week.
 
