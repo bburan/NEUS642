@@ -101,8 +101,8 @@ You need a way to write Python code. The best way to do this is to use a dedicat
 
 ### Course-specific resources
 
-    * [NEUS642 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. I will try to monitor this when I can. Use this for asking questions.
-	* [NEUS642 on Github](https://github.com/bburan/NEUS642) - The source code repository for the class. All new files and updates will be posted here.
+* [NEUS642 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. The course staff will try to monitor this when we can. Use this for asking questions.
+* [NEUS642 on Github](https://github.com/bburan/NEUS642) - The source code repository for the class. All new files and updates will be posted here.
 
 ### Other resources
 
