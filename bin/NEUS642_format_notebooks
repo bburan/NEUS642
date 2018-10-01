@@ -1,7 +1,10 @@
 #! /bin/python3
 
+from copy import deepcopy
 import json
+import os.path
 import re
+
 
 header_pattern = re.compile(r'(?:^|\n)(#+)\s+([\d\w\s]+)\s*(?=$|\n)')
 answer_pattern = re.compile(r'^#\sanswer$', flags=re.IGNORECASE)
@@ -10,18 +13,23 @@ answer_pattern = re.compile(r'^#\sanswer$', flags=re.IGNORECASE)
 def repl(match):
     anchor, title = match.groups()
     slugified_title = title.replace(' ', '-')
-    template = '<a name="#{slugified_title}"></a>\n{anchor} {title}\n<a href="#Overview">Return to overview</a>\n'
-    return template.format(slugified_title=slugified_title, anchor=anchor, title=title)
+    template = '<a name="#{}"></a>\n{} {}\n' \
+        '<a href="#Overview">Return to overview</a>\n'
+    return template.format(slugified_title, anchor, title)
 
 
 def main(base_file):
     # Read in the data
     answer_file = base_file.replace('base.ipynb', 'answers.ipynb')
     student_file = base_file.replace('base.ipynb', 'students.ipynb')
+    teacher_file = base_file.replace('base.ipynb', 'teacher.ipynb')
+    base_path = os.path.dirname(base_file)
+    answer_dir = os.path.join(base_path, 'answers')
+    os.makedirs(answer_dir, exist_ok=True)
 
     with open(base_file, 'r') as fh:
         data = json.load(fh)
-    
+
     # First, make a pass through to generate TOC.
     headers = []
     for cell in data['cells']:
@@ -31,14 +39,14 @@ def main(base_file):
                 headers.extend(found_headers)
                 s = header_pattern.sub(repl, source)
                 cell['source'][i] = s
-        
+
     string = ['<a href="#Overview"></a>', '# Overview']
     for level, title in headers:
         n_indent = (len(level)-1) * 4
         indent = ' ' * n_indent
         slugified_title = title.strip().replace(' ', '-')
-        t = r'{indent}* <a href="#{slugified_title}">{title}</a>'
-        string.append(t.format(indent=indent, slugified_title=slugified_title, title=title))
+        t = r'{}* <a href="#{}">{}</a>'
+        string.append(t.format(indent, slugified_title, title))
 
     toc = '\n'.join(string)
     toc_cell = {
@@ -49,18 +57,41 @@ def main(base_file):
 
     data['cells'].insert(0, toc_cell)
 
-    with open(answer_file, 'w') as fh:
-        json.dump(data, fh)
-    
+    base_cells = data['cells']
+    answer_cells = deepcopy(base_cells)
+    student_cells = deepcopy(base_cells)
+    teacher_cells = deepcopy(base_cells)
+
     # Now, make another pass to strip answer code out
-    for cell in data['cells']:
-        if cell['cell_type'] == 'code':
-            for i, source in enumerate(cell['source']):
+    i_answer = 0
+
+    for base, answer, student, teacher in \
+            zip(base_cells, answer_cells, student_cells, teacher_cells):
+        if base['cell_type'] == 'code':
+            for i, source in enumerate(base['source']):
                 if answer_pattern.match(source):
-                    cell['source'] = cell['source'][:i]
-                    cell['source'].append('# Your answer here')
+                    i_answer += 1
+                    answer_filename = 'answer_{:03d}.txt'.format(i_answer)
+                    answer_path = os.path.join(answer_dir, answer_filename)
+                    answer_source = base['source'][i:]
+                    with open(answer_path, 'w') as fh:
+                        fh.writelines(answer_source)
+                    student['source'] = cell['source'][:i]
+                    student['source'].append('# Your answer here')
+                    teacher['source'] = cell['source'][:i]
+                    teacher['source'].append('%load "answers/{}"'.format(answer_filename))
+                    answer['source'] = cell['source'][i:]
+
+    with open(answer_file, 'w') as fh:
+        data['cells'] = answer_cells
+        json.dump(data, fh)
 
     with open(student_file, 'w') as fh:
+        data['cells'] = student_cells
+        json.dump(data, fh)
+
+    with open(teacher_file, 'w') as fh:
+        data['cells'] = teacher_cells
         json.dump(data, fh)
 
 
