@@ -10,8 +10,6 @@ When trying to collaboratively edit notebooks using the shared folder, we recomm
 
 As you develop your notebook you may find that a particular library you need isn't installed (i.e., you get an `ImportError`). Please send Brad a message on Gitter (@bburan) and he will install it for you.
 
-As an alternative, Google also has [Colaboratory](https://colab.research.google.com), which is a collaborative notebook editing environment built on top of Jupyter. You may find it easier to use for collaborative editing. Getting data files into this notebook requires assistance of one of the course staff (email Brad with the data you need uploaded and he will help you get it loaded into your Colaboratory notebook). Once you've finished editing the notebook, the course staff will take the notebook and upload it to the exajupyter server for class.
-
 Class notebooks
 ---------------
 Each week at the beginning of class, you will need to copy the notebooks and data for that class to your personal `notebooks` folder. To do so, open a terminal and type:
@@ -20,3 +18,36 @@ Each week at the beginning of class, you will need to copy the notebooks and dat
 
 By default, the update script will not overwrite existing files. If you ever want to revert to the original copy of the notebook, you can do so by renaming (or deleting) the notebook you want to revert and then running `NEUS642_update_notebooks` again.
 
+Formatting your notebook
+------------------------
+The course staff has a script that will automatically format your notebook in preparation for class. The script will:
+
+* Scan for all markdown headings (lines starting with `#`, `##`, `###`, etc.) and create a table of contents at the top of the file.
+* Scan for comments in code cells starting with `# Answer`, deleting everything from `# Answer` to the end of the cell, and insert `# Your answer here`. Note that the cell can contain text *before* the `# Answer` line that will not get deleted.
+* Scan for all markdown headings (e.g., `## Exercise`, `### Exercise`, etc.) and auto-number them.
+
+To take advantage of this script, ensure that you use markdown formatting for your headers and do not number your exercises:
+
+    # Main header
+	Text goes here
+
+	## Subheader
+	Text goes here
+
+	### Exercise
+	Text goes here
+
+	# Main header
+	Text goes here
+
+	## Exercise
+	Text goes here
+
+For your answers, the cell containing the answer should be in the format:
+
+	# Answer
+	<code for actual solution>
+
+In the student copy of the notebook, the cell will be converted to:
+
+	# Your answer here
