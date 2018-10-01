@@ -1,0 +1,3 @@
+# Answer
+EP_data = pd.read_csv(filename, index_col=['subject', 'condition', 'trial', 'accept'])
+EP_data

@@ -1,0 +1,3 @@
+# Answer
+EP_mean_data = EP_good_data.groupby(['subject', 'condition']).mean()
+EP_mean_data

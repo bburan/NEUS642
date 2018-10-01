@@ -1,0 +1,3 @@
+# Answer
+row_slice = pd.IndexSlice[:, 'Go']
+EP_data_ROI = EP_mean_data.loc[row_slice, 200:400] 

@@ -1,0 +1,3 @@
+# Answer
+EP_data_reshape = pd.melt(EP_data_reshape, id_vars=['subject', 'condition'], value_name='Amplitude', var_name=['Time'])
+EP_data_reshape

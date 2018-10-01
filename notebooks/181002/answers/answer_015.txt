@@ -1,0 +1,3 @@
+# Answer
+EP_data_ROI_mean = EP_data_ROI.mean(axis=1)
+EP_data_ROI_mean.plot.bar()

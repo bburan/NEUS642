@@ -1,0 +1,2 @@
+# Answer
+sns.lineplot(x='Time', y='Amplitude', hue='condition', data = EP_data_reshape , ci=68, err_style='band')

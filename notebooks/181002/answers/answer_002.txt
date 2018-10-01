@@ -1,0 +1,3 @@
+# Answer
+data = EP_data.loc[19, :]
+data

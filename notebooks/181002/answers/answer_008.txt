@@ -1,0 +1,3 @@
+# Answer
+time = time - 200
+time

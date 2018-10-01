@@ -1,0 +1,4 @@
+# Answer
+row_slice = pd.IndexSlice[6, 'Go', 5, True]
+data = EP_data.loc[row_slice, :] 
+data 
