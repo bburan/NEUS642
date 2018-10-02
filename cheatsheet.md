@@ -51,3 +51,9 @@ For your answers, the cell containing the answer should be in the format:
 In the student copy of the notebook, the cell will be converted to:
 
 	# Your answer here
+
+In the teacher copy of the notebook, the cell will be converted to:
+
+	%load "answers/answer001.txt"
+	
+When presenting your notebook during class, the first time you run the cell it will copy the answer code into the cell. The second time you run the cell, the code will be executed. If you decide to test your version of the teacher notebook before class, the answer cells will be overwritten with the version that has the answer loaded. Please be sure to delete your copy of the teacher notebook and run `NEUS642_update_notebooks` to get the original version of the teacher notebook.
