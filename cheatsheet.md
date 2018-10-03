@@ -47,7 +47,7 @@ Notice that we included `git` when we created the environment. Git is not a Pyth
 
 Now, clone the Git repository:
 
-	git clone https://github.com/bburan/NEUS642
+	git clone --recurse-submodules https://github.com/bburan/NEUS642
 
 If you used the default folder above, the notebooks will now be available at:
 
@@ -64,6 +64,7 @@ A browser tab should automatically open. If it doesn't, go to http://localhost:8
 
 To copy the new notebooks, open an Anaconda prompt and CD to your NEUS642 folder:
 
+	conda activate NEUS642
 	cd classes/NEUS642
 	git pull
 
@@ -73,8 +74,8 @@ We may also have instructions on additional packages and libraries that need to 
 
 Open an Anaconda prompt and run the following:
 
-	cd classes/NEUS642/notebooks
 	conda activate NEUS642
+	cd classes/NEUS642/notebooks
 	jupyter notebook
 
 A browser tab should then open with the Jupyter notebook.
