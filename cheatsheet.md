@@ -1,3 +1,17 @@
+<!-- vim-markdown-toc GFM -->
+
+* [Exajupyter server](#exajupyter-server)
+	* [Collaborative editing](#collaborative-editing)
+	* [Class notebooks](#class-notebooks)
+* [Running your own Jupyter notebook](#running-your-own-jupyter-notebook)
+	* [Creating a conda environment](#creating-a-conda-environment)
+	* [Before each class](#before-each-class)
+	* [To reopen the Jupyter notebook](#to-reopen-the-jupyter-notebook)
+* [Creating a notebook for class](#creating-a-notebook-for-class)
+	* [Formatting](#formatting)
+
+<!-- vim-markdown-toc -->
+
 # Exajupyter server
 
 Your Jupyter server has two main folders for class:
