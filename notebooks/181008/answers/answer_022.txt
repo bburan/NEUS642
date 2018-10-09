@@ -1,0 +1,8 @@
+# Answer
+for image in filtered_list:
+    fh = os.path.join(folder_path, image)
+    with czifile.CziFile(fh) as czi:
+        image_array = czi.asarray()
+    filename = image[:-4]
+    max_projection(image_array, filename)
+    x_center_orth(image_array, filename)

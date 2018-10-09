@@ -1,0 +1,2 @@
+# Answer
+my_2D_array[:, 2]

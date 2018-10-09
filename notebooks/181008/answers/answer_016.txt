@@ -1,0 +1,3 @@
+# Answer
+im = Image.fromarray(projection)
+im.save('projection.tif')

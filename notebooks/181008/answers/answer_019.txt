@@ -1,0 +1,10 @@
+# Answer
+def x_center_orthog(image):
+    _, _, z_axis, y_axis, x_axis, _ = image.shape
+    x = int(x_axis/2)
+    orthogonal = image[0, 0, :, :, x, 0]
+    im = Image.fromarray(orthogonal)
+    im.save('x_orthog.tif')
+    return orthogonal
+    
+x_center_orthog(my_image)

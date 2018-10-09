@@ -1,0 +1,2 @@
+# Answer
+my_image[0, 0, :, :, :, 0]

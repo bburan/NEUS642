@@ -1,0 +1,31 @@
+# Answer
+def max_projection(image, filename):
+    projection = np.max(image[0, 0, :, :, :,0], axis = 0)
+    im = Image.fromarray(projection)
+    im.save(f'{filename}_MIP.tif')
+
+def x_center_orth(image, filename):
+    _, _, z_axis, y_axis, x_axis, _ = image.shape
+    x = round(x_axis/2)
+    orthogonal = image[0, 0, :, :, x,0]
+    im = Image.fromarray(orthogonal)
+    im.save(f'{filename}_orth.tif')
+
+
+folder_path = input('Enter the path to the folder: ')
+# Enter: Images
+print(folder_path)
+
+folder_list = os.path.os.listdir(folder_path)
+print(folder_list)
+
+filtered_list = [fn for fn in folder_list if not fn.startswith('.')]
+
+for image in filtered_list:
+    fh = os.path.join(folder_path, image)
+    print(fh)
+    with czifile.CziFile(fh) as czi:
+        image_array = czi.asarray()
+    filename = image[:-4]
+    max_projection(image_array, filename)
+    x_center_orth(image_array, filename)
