@@ -32,6 +32,7 @@ def main(base_file):
 
     # First, make a pass through to generate TOC.
     headers = []
+    min_indent = 0
     for cell in data['cells']:
         if cell['cell_type'] == 'markdown':
             for i, source in enumerate(cell['source']):
@@ -40,11 +41,13 @@ def main(base_file):
                 s = header_pattern.sub(repl, source)
                 cell['source'][i] = s
 
+    min_indent = min(len(l) for l, t in headers)
     string = ['<a href="#Overview"></a>', '# Overview']
     for level, title in headers:
-        n_indent = (len(level)-1) * 4
+        n_indent = (len(level)-min_indent) * 4
         indent = ' ' * n_indent
-        slugified_title = title.strip().replace(' ', '-')
+        title = title.strip()
+        slugified_title = title.replace(' ', '-')
         t = r'{}* <a href="#{}">{}</a>'
         string.append(t.format(indent, slugified_title, title))
 
