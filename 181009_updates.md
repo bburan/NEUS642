@@ -1,10 +1,26 @@
+# Short description
+
 The exercise for this week requires a few additional packages installed to the `NEUS642` environment. To install these, open an Anaconda prompt and run the following:
 
 	conda activate NEUS642
-	conda install cython 'testpath<0.4'
+	conda install cython pillow
 	pip install czifile
 
-How do you know you need to do these in this order? We know that we need to install czifile for the exercise. I typically try `conda install` first to see what happens:
+If you get the following error message when trying to install `czifile`:
+
+	pip._vendor.pkg_resources.RequirementParseError: Invalid requirement, parse error at "'; extra '"
+
+You need to run ([according to StackOverflow](https://stackoverflow.com/questions/52582563/pip-install-attributeerror-distinfodistribution-dep-map): 
+
+	conda install 'testpath<0.4'
+
+Once you do that, run:
+
+	pip install czifile
+
+# Long description (i.e., how do you figure this out on your own?)
+
+How do you know you need to do these in this order? Usually installing third-party Python libraries are not this complicated. For whatever reason, `czifile` is a particularly complicated package to install. We know that we need to install czifile for the exercise. I typically try `conda install` first to see what happens:
 
 	conda install czifile
 
