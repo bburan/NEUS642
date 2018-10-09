@@ -10,7 +10,7 @@ If you get the following error message when trying to install `czifile`:
 
 	pip._vendor.pkg_resources.RequirementParseError: Invalid requirement, parse error at "'; extra '"
 
-You need to run ([according to StackOverflow](https://stackoverflow.com/questions/52582563/pip-install-attributeerror-distinfodistribution-dep-map): 
+You need to run ([according to StackOverflow](https://stackoverflow.com/questions/52582563/pip-install-attributeerror-distinfodistribution-dep-map)): 
 
 	conda install 'testpath<0.4'
 
