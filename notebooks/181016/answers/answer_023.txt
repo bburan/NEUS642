@@ -1,0 +1,8 @@
+# Answer
+EPSC_peaks = []
+
+for peak in all_peaks:
+    if mask[peak] == True:
+        EPSC_peaks.append(peak)
+    else:
+        pass

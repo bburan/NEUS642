@@ -1,0 +1,3 @@
+# Answer
+all_peaks = ss.argrelmin(current1_filtered, order=25)[0]
+print (all_peaks)

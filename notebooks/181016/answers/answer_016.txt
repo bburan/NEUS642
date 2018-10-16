@@ -1,0 +1,3 @@
+# Answer
+argrelmin_res = ss.argrelmin(filtered_data)
+print (argrelmin_res)

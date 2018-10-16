@@ -1,0 +1,2 @@
+# Answer
+mask = current1_filtered < thresh

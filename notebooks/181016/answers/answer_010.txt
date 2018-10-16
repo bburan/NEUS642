@@ -1,0 +1,8 @@
+# Answer
+plt.figure()
+plt.plot(time, current)
+plt.xlabel('Time (sec)')
+plt.ylabel('Current (pA)')
+plt.ylim((-500, 100))
+plt.xlim((0.03, 0.07))
+plt.show()

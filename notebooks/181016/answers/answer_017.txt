@@ -1,0 +1,6 @@
+# Answer
+plt.figure()
+plt.plot(short_time, filtered_data, color='grey')
+plt.plot(short_time[EPSC_peaks], filtered_data[EPSC_peaks], "*", color='k', markersize=10)
+plt.xlabel('Time (sec)')
+plt.ylabel('Current (pA)')

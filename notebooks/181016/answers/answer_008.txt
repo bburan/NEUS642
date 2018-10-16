@@ -1,0 +1,3 @@
+# Answer
+print(time.shape)
+print(current.shape)

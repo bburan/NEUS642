@@ -1,0 +1,12 @@
+# Answer
+f_cutoff = 200
+Wn = f_cutoff / (sample_rate/2)
+b, a = ss.iirfilter(1, Wn, ftype='butter', btype='low')#designing the filter
+filtered_data200 = ss.filtfilt(b, a, short_data) #filtering
+#Plotting
+plt.figure()
+plt.plot(short_time, filtered_data,'r' ,lw=2) #non-filtered data
+plt.plot (short_time, filtered_data200, 'k', lw=2)    #filtered data on top
+plt.xlabel('Time (s)')
+plt.ylabel('Current (pA)')
+plt.legend(['Order 1', 'Order 5'])

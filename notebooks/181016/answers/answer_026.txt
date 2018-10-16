@@ -1,0 +1,4 @@
+# Answer
+Dur_in_sec = len(current1_filtered)/sample_rate
+PF = len(EPSC_peaks)/Dur_in_sec 
+print("EPSC frequency is {} Hz".format(PF))
