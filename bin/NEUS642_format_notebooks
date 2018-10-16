@@ -1,21 +1,51 @@
 #! /bin/python3
 
 from copy import deepcopy
+from functools import partial
 import json
+import numpy as np
 import os.path
 import re
 
 
-header_pattern = re.compile(r'(?:^|\n)(#+)\s+([\d\w\s]+)\s*(?=$|\n)')
+header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
 answer_pattern = re.compile(r'^#\sanswer$', flags=re.IGNORECASE)
+template = '<a name="#{}"></a>\n{} {}\n' \
+    '<a href="#Overview">Return to overview</a>\n'
+
+def slugify(title):
+    return title.strip().replace(' ', '-')
 
 
-def repl(match):
+def repl(tracker, match):
     anchor, title = match.groups()
-    slugified_title = title.replace(' ', '-')
-    template = '<a name="#{}"></a>\n{} {}\n' \
-        '<a href="#Overview">Return to overview</a>\n'
-    return template.format(slugified_title, anchor, title)
+    title = title.strip(' :\n\s')
+
+    if title == 'Exercise':
+        tracker['n_exercises'] += 1
+        title = f"Exercise {tracker['n_exercises']}"
+    if title in tracker['titles']:
+        print(repr(title))
+        raise ValueError(f'Duplicate title {title}')
+
+    slug = slugify(title)
+    indent = len(anchor)
+    indent = np.clip(indent, tracker['last_indent']-1,
+                     tracker['last_indent'] + 2)
+    tracker['min_indent'] = min(tracker['min_indent'], indent)
+    tracker['last_indent'] = indent
+    tracker['indents'].append(indent)
+    tracker['titles'].append(title)
+    tracker['slugs'].append(slug)
+
+    return f'<a name="#{slug}"></a>\n{"#" * indent} {title}\n' \
+            '<a href="#Overview">Return to overview</a>\n'
+
+
+def iter_cells(data, cell_type):
+    for cell in data['cells']:
+        if cell['cell_type'] == cell_type:
+            yield cell
 
 
 def main(base_file):
@@ -31,25 +61,28 @@ def main(base_file):
         data = json.load(fh)
 
     # First, make a pass through to generate TOC.
-    headers = []
-    min_indent = 0
-    for cell in data['cells']:
-        if cell['cell_type'] == 'markdown':
-            for i, source in enumerate(cell['source']):
-                found_headers = header_pattern.findall(source)
-                headers.extend(found_headers)
-                s = header_pattern.sub(repl, source)
-                cell['source'][i] = s
+    tracker = {
+        'n_exercises': 0,
+        'slugs': [],
+        'titles': [],
+        'indents': [],
+        'min_indent': np.inf,
+        'last_indent': 1,
+    }
+    repl_frozen = partial(repl, tracker)
 
-    min_indent = min(len(l) for l, t in headers)
+    for cell in iter_cells(data, 'markdown'):
+        for i, source in enumerate(cell['source']):
+            cell['source'][i] = header_pattern.sub(repl_frozen, source)
+
     string = ['<a href="#Overview"></a>', '# Overview']
-    for level, title in headers:
-        n_indent = (len(level)-min_indent) * 4
-        indent = ' ' * n_indent
-        title = title.strip()
-        slugified_title = title.replace(' ', '-')
-        t = r'{}* <a href="#{}">{}</a>'
-        string.append(t.format(indent, slugified_title, title))
+    n_headers = len(tracker['titles'])
+    for i in range(n_headers):
+        indent = tracker['indents'][i] - tracker['min_indent']
+        title = tracker['titles'][i]
+        slug = tracker['slugs'][i]
+        t = f'{" " * 2 * indent}* <a href="#{slug}">{title}</a>'
+        string.append(t)
 
     toc = '\n'.join(string)
     toc_cell = {
