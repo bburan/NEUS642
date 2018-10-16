@@ -1,3 +1,2 @@
-# Answer
-print(data_file.sweepLabelX)
-print(data_file.sweepUnitsX)
+# Answer 
+print(data_file.abfDateTimeString)

@@ -1,5 +1,3 @@
 # Answer
-f_cutoff = 1000
-Wn = f_cutoff/(sample_rate/2) # normalized cutoff frequency  
-b, a = ss.iirfilter(1, Wn, ftype='butter', btype='low')#designing the filter
-current1_filtered = ss.filtfilt(b, a, current1) #filtering
+argrelmin_res = ss.argrelmin(filtered_data)
+print (argrelmin_res)

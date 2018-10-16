@@ -1,6 +1,8 @@
 # Answer
-plt.psd(short_data, Fs=sample_rate, color='grey')
-plt.psd(filtered_data, Fs=sample_rate, color='r')
-plt.psd(filtered_data200, Fs=sample_rate, color='k')
-plt.xscale('log')
-plt.legend(['Non-filtered','Low-pass 1000', 'Low-pass 200'])
+short_data = current[t_03:t_04]
+short_time = time[t_03:t_04]
+
+plt.figure()
+plt.plot(short_time, short_data, lw=.5)
+plt.xlabel('Time (sec)')
+plt.ylabel('Current (pA)')

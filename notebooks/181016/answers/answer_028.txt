@@ -1,0 +1,3 @@
+# Answer
+print ("EPSC peak amplitude is {} +/- {}".format\
+       ( np.mean(current1_filtered[(EPSC_peaks)]) , np.std(current1_filtered[(EPSC_peaks)])))

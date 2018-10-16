@@ -1,0 +1,5 @@
+# Answer
+plt.figure()
+plt.plot(time1, current1_filtered, 'grey')
+plt.plot(time1[(EPSC_peaks)], current1_filtered[(EPSC_peaks)], '*', color='r', markersize=10)
+plt.plot(time1[(all_peaks)], current1_filtered[(all_peaks)], '.', color='k', markersize=2)

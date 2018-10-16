@@ -1,3 +1,4 @@
 # Answer
-argrelmin_res = ss.argrelmin(filtered_data)
-print (argrelmin_res)
+plt.psd(short_data, Fs=sample_rate);
+plt.psd(filtered_data, Fs=sample_rate)
+plt.xscale('log')

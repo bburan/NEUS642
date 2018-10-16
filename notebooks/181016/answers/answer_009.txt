@@ -1,9 +1,3 @@
 # Answer
-sample_period = time[1] - time[0]
-sample_rate = 1/sample_period
-timepoint = 0.5
-sample = int(round(sample_rate * timepoint))
-value = current[sample]
-
-string = f"The current at {timepoint} sec is {value:0.2f} {data_file.sweepUnitsY}"
-print(string)
+print(time.shape)
+print(current.shape)

@@ -1,2 +1,5 @@
 # Answer
-mask = current1_filtered < thresh
+start = int(round(0.08*sample_rate))
+end = int(round(0.4*sample_rate))
+time1 = time[start:end]
+current1 = current[start:end]

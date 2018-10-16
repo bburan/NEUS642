@@ -1,8 +1,13 @@
-# Answer
-plt.figure()
-plt.plot(time, current)
-plt.xlabel('Time (sec)')
-plt.ylabel('Current (pA)')
-plt.ylim((-500, 100))
-plt.xlim((0.03, 0.07))
-plt.show()
+# Answer 
+c_34 = current[34]
+print("The current at this time is {0} {1}".format(c_34, data_file.sweepUnitsY))
+
+# using f-strings:
+i = 34
+string = f"The current at sample {i} is {current[i]:.2f} {data_file.sweepUnitsY}"
+print(string)
+
+# using format
+i = 34
+string = "The current at sample {i} is {value:.2f} {units}".format(i=i, value=current[i], units=data_file.sweepUnitsY)
+print(string)

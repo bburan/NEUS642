@@ -1,5 +1,6 @@
 # Answer
-start = int(round(0.08*sample_rate))
-end = int(round(0.4*sample_rate))
-time1 = time[start:end]
-current1 = current[start:end]
+plt.psd(short_data, Fs=sample_rate, color='grey')
+plt.psd(filtered_data, Fs=sample_rate, color='r')
+plt.psd(filtered_data200, Fs=sample_rate, color='k')
+plt.xscale('log')
+plt.legend(['Non-filtered','Low-pass 1000', 'Low-pass 200'])
