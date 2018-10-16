@@ -9,7 +9,7 @@ import re
 
 
 header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
-answer_pattern = re.compile(r'^#\sanswer$', flags=re.IGNORECASE)
+answer_pattern = re.compile(r'^#\sanswer.*$', flags=re.IGNORECASE)
 template = '<a name="#{}"></a>\n{} {}\n' \
     '<a href="#Overview">Return to overview</a>\n'
 
