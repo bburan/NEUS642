@@ -1,0 +1,8 @@
+y = hill_eq(x, 5, 60, 8e-8, 1)
+plt.plot(x_data, mean_responses_male, "o")
+plt.plot(x, y)
+
+# Answer 
+residuals = mean_responses_male - y
+sum_of_squares = np.mean(residuals**2)
+sum_of_squares

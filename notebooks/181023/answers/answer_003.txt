@@ -1,0 +1,3 @@
+# Answer 
+dose_response_male['percent_UK'] = 100 * dose_response_male['morphine_current'] / dose_response_male['UK_current']
+dose_response_male

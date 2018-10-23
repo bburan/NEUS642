@@ -1,0 +1,3 @@
+# Answer 
+female_fit, pcov_f = curve_fit(hill_eq, x_data, y_data_female, bounds=bounds)
+female_fit

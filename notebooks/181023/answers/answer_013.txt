@@ -1,0 +1,5 @@
+bounds = (0, 100) # Limits fit to only positive values, within a reasonable range
+
+# Answer
+male_fit, _ = curve_fit(hill_eq, x_data, y_data_male, bounds=bounds)
+male_fit

@@ -1,0 +1,10 @@
+x = x_data
+bottom = 10
+top = 60
+EC50 = 3e-7
+hillslope = 1 
+
+# Answer 
+y = bottom + (top-bottom)/(1 + 10**(np.log10(EC50)-x)) 
+plt.plot(x_data, mean_responses_male, "o")
+plt.plot(x, y)

@@ -1,0 +1,4 @@
+# Answer 
+grouping_male = dose_response_male.groupby(['Log[M]'])
+mean_responses_male = grouping_male['percent_UK'].mean()
+mean_responses_male

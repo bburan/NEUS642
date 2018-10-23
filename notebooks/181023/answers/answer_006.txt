@@ -1,0 +1,3 @@
+# Answer 
+sem_responses_male = grouping_male['percent_UK'].sem()
+sem_responses_male

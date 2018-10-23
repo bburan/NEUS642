@@ -1,0 +1,8 @@
+x_data = mean_responses_male.index.values
+
+# Answer 
+plt.errorbar(x_data, mean_responses_male, yerr=sem_responses_male, marker='o', linestyle='', capsize=3)
+plt.xlabel('Log[M]')
+plt.ylabel('% UK')
+plt.title('Morphine Dose Response')
+plt.show()

@@ -1,0 +1,5 @@
+# bottom = 5, top = 60, EC50 = 8e-8, hillslope = 1
+# Answer 
+y = hill_eq(x, 5, 60, 8e-8, 1)
+plt.plot(x,y)
+plt.plot(x_data, mean_responses_male, "o")

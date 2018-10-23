@@ -1,0 +1,3 @@
+# Answer 
+male_line = hill_eq(x_data, *male_fit)
+plt.plot(x_data, male_line)
