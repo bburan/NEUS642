@@ -9,7 +9,7 @@ import re
 
 
 header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
-answer_pattern = re.compile(r'^#\sanswer.*$', flags=re.IGNORECASE)
+answer_pattern = re.compile(r'^#\s?answer.*$', flags=re.IGNORECASE)
 template = '<a name="#{}"></a>\n{} {}\n' \
     '<a href="#Overview">Return to overview</a>\n'
 
@@ -19,19 +19,17 @@ def slugify(title):
 
 def repl(tracker, match):
     anchor, title = match.groups()
-    title = title.strip(' :\n\s')
+    title = title.strip(' \t\n\r:')
 
     if title == 'Exercise':
         tracker['n_exercises'] += 1
         title = f"Exercise {tracker['n_exercises']}"
     if title in tracker['titles']:
-        print(repr(title))
         raise ValueError(f'Duplicate title {title}')
 
     slug = slugify(title)
     indent = len(anchor)
-    indent = np.clip(indent, tracker['last_indent']-1,
-                     tracker['last_indent'] + 2)
+    indent = np.clip(indent, 1, tracker['last_indent'] + 1)
     tracker['min_indent'] = min(tracker['min_indent'], indent)
     tracker['last_indent'] = indent
     tracker['indents'].append(indent)
