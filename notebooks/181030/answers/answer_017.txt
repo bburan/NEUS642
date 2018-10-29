@@ -1,0 +1,26 @@
+# Answer
+choice = input(message)
+drug_map = {
+    'TTX + NBQX': 'baseline',
+    'TTX + NBQX + Cd': 'Drug 1',
+    'TTX + NBQX + Cd + RIM': 'Drug 2',
+}
+
+def choice_to_column_name(choice):
+    choice_map = {
+        'A': 'mIPSC amplitude (pA)',
+        'B': 'Rise-Time (ms)',
+        'C': 'Decay (ms)',
+        'D': 'Inter-Event Intervals (s)'
+    }
+    try:
+        return choice_map[choice.upper()]
+    except KeyError:
+        print('Please specify a letter: A/B/C/D')
+
+def plot_hist (data, choice, drugs):
+    column_name = choice_to_column_name (choice)
+    plot_data(data, column_name, drug_map)
+
+    
+plot_hist(minis_data, choice, drug_map)

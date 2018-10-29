@@ -1,0 +1,10 @@
+# Answer
+data = [amp_baseline, amp_drug1, amp_drug2]
+colors = ['grey','blue','red']
+labels = ['Baseline','Drug1','Drug2']
+
+plt.hist(data, color=colors, label=labels, bins=50, stacked=True)
+plt.legend()
+plt.xlabel('Amplitude (pA)')
+plt.ylabel('Frequency')
+plt.title('Amplitude Histogram');

@@ -1,0 +1,25 @@
+from scipy.optimize import curve_fit
+from scipy.stats import norm
+
+# plt.hist returns three values. the value for each bin, 
+# the bins (including the rightmost edge) and the plot
+density, bins, _ = plt.hist(amp_baseline, bins=50, density=True)
+
+# For curve fitting, len(x) must equal len(y). So, we discard the rightmost edge.
+x = bins[:-1]
+
+# Start with an initial guess that's in the correct ballpark. 
+# If we start too far off, the curve fitting will just fail. 
+# Plus, curve_fit can't figure out how many arguments that `norm.pdf` 
+# takes due to how the developers wrote norm.pdf. So, by providing
+# p0, curve_fit can figure out how many variables it's supposed to fit.
+p0 = [50, 50]
+
+# Answer
+# Now, do the fit. We use the underscore, _, to indicate that we don't care
+# about the second value returned by curve_fit.
+p0_fitted, _ = curve_fit(norm.pdf, x, density, p0)
+
+# Compute the fitted line and plot it.
+y = norm.pdf(x, *p0_fitted)
+plt.plot(x, y)

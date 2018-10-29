@@ -1,0 +1,8 @@
+# Answer
+mask1 = minis_data['Drug'] == 'TTX + NBQX + Cd'
+minis_drug1 = minis_data[mask1]
+display(minis_drug1)
+
+mask2 = minis_data['Drug'] == 'TTX + NBQX + Cd + RIM'
+minis_drug2 = minis_data[mask2]
+display(minis_drug2)

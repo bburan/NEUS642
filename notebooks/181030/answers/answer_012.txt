@@ -1,0 +1,10 @@
+from scipy.stats import gamma
+
+density, bins, _ = plt.hist(amp_baseline, bins=50, density=True)
+x = bins[:-1]
+p0 = [10, 10, 10]
+
+# Answer
+p0_fitted, _ = curve_fit(gamma.pdf, x, density, p0)
+y = gamma.pdf(x, *p0_fitted)
+plt.plot(x, y)

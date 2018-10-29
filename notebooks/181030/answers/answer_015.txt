@@ -1,0 +1,29 @@
+# Answer
+def plot_data(data, column, drugs):
+    """
+    Plots stacked histograms.
+    
+    Parameters
+    ----------
+    data : pandas DataFrame
+        Data to plot
+    column : string
+        Name of column containing data to plot
+    drugs : dict
+        Dictonary mapping drug name (key) to legend label (value) in the plot. 
+    """
+    hist_data = []
+    hist_labels = []
+    for drug_name, drug_label in drugs.items():
+        mask = data['Drug'] == drug_name
+        subset = data.loc[mask, column]
+        hist_data.append(subset)
+        hist_labels.append(drug_label)
+
+    plt.hist(hist_data, label=hist_labels, stacked=True, bins=50)
+    plt.legend()
+    plt.xlabel(column)
+    plt.ylabel('frequency')
+
+
+plot_data(minis_data, 'Decay (ms)', drug_map)

@@ -1,0 +1,2 @@
+# Answer
+minis_data.loc[0, 'Drug']

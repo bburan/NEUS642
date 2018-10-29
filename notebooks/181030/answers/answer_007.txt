@@ -1,0 +1,2 @@
+# Answer
+plt.hist(amp_baseline, bins=8);

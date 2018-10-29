@@ -1,0 +1,20 @@
+# Answer: 
+drug_map = {
+    'TTX + NBQX': 'baseline',
+    'TTX + NBQX + Cd': 'Drug 1',
+    'TTX + NBQX + Cd + RIM': 'Drug 2',
+}
+
+hist_data = []
+hist_labels = []
+col_name = 'mIPSC amplitude (pA)'
+
+for drug_name, drug_label in drug_map.items():
+    mask = minis_data['Drug'] == drug_name
+    subset = minis_data.loc[mask, col_name]
+    hist_data.append(subset)
+    hist_labels.append(drug_label)
+    #print (hist_data, hist_labels)
+
+plt.hist(hist_data, label=hist_labels, stacked=True, bins=50)
+plt.legend()

@@ -1,0 +1,4 @@
+# Answer
+mask = minis_data['Drug'] == 'TTX + NBQX'
+minis_baseline = minis_data.loc[mask]
+minis_baseline

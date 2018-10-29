@@ -1,0 +1,4 @@
+# Answer
+data = [amp_baseline, amp_drug1, amp_drug2]
+color = ['grey', 'blue', 'red']
+plt.hist(data, color=color, bins=50, stacked=True);

@@ -1,0 +1,10 @@
+choice = input(message)
+#Answer
+choice_map = {
+    'A': 'mIPSC amplitude (pA)',
+    'B': 'Rise-Time (ms)',
+    'C': 'Decay (ms)',
+    'D': 'Inter-Event Intervals (s)'
+}
+column_name = choice_map[choice.upper()]
+print ('column_name is {x}'.format(x = column_name))

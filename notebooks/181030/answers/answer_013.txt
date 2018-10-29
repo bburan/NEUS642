@@ -1,0 +1,9 @@
+from scipy.stats import gamma
+#Answer
+shape, loc, scale = gamma.fit(amp_baseline)
+
+plt.hist(amp_baseline, bins=50, density=True)
+
+x_fit = np.arange(0, 250)
+y_pdf = gamma.pdf(x_fit, shape, loc, scale)
+plt.plot(x_fit, y_pdf)

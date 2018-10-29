@@ -1,0 +1,5 @@
+cell_column = minis_data['Cell']
+
+# Answer
+unique_cells = cell_column.unique()
+unique_cells

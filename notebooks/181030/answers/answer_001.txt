@@ -1,0 +1,3 @@
+# Answer
+minis_data = pd.read_csv('minis data.csv') 
+minis_data

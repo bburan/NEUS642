@@ -1,0 +1,3 @@
+# Answer
+amp_drug1 = minis_drug1['mIPSC amplitude (pA)']
+amp_drug2 = minis_drug2['mIPSC amplitude (pA)']
