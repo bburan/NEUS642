@@ -1,0 +1,17 @@
+# Answer
+def calculate_HR(hit):
+    HR = []
+    n_rows = len(hit)
+    steps = range(0, n_rows, 5)
+    for i in row_steps:
+        section = hit[i:i+5]
+        divisor = len(section)
+        if divisor == 5:
+            intermediateHR = section.sum() / divisor
+            HR.append(intermediateHR)
+    return HR
+    
+HR_t2VNS = calculate_HR(t2VNS_hit)
+HR_t1UN = calculate_HR(t1UN_hit)
+HR_t2UN = calculate_HR(t2UN_hit)
+HR_t2VNS

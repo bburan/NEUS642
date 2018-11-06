@@ -1,0 +1,8 @@
+# Answer
+tone2_VNS_mask = dataVNS['Reward Type'] == 1
+tone2VNS = dataVNS.loc[tone2_VNS_mask]
+display(tone2VNS)
+
+tone2_UN_mask = dataUN['Reward Type'] == 1
+tone2UN = dataUN.loc[tone2_UN_mask]
+display(tone2UN)

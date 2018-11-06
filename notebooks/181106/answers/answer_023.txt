@@ -1,0 +1,6 @@
+# Answer
+LI_VNS = []
+for t1, t2 in zip(HR_t1VNS, HR_t2VNS):
+    LI = (t1 - t2) / (0.5 * (t1 + t2))
+    LI_VNS.append(LI)
+LI_VNS

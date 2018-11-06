@@ -1,0 +1,7 @@
+i = 0
+HR_tone1 = HR_t1VNS[i]
+HR_tone2 = HR_t2VNS[i]
+
+# Answer
+LI = (HR_tone1 - HR_tone2) / (0.5 * (HR_tone1 + HR_tone2))
+LI

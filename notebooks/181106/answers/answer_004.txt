@@ -1,0 +1,3 @@
+# Answer
+tone1VNS = dataVNS.loc[tone1_VNS_mask]
+display(tone1VNS)

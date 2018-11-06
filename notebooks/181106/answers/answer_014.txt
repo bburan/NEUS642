@@ -1,0 +1,4 @@
+# Answer
+row_steps = range(0, n_rows, 5)
+print(row_steps)
+list(row_steps)

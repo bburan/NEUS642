@@ -1,0 +1,4 @@
+# Answer
+LI_VNS_pos = [LI > 0 for LI in LI_VNS]
+LI_UN_pos = [LI > 0 for LI in LI_UN]
+LI_VNS_pos

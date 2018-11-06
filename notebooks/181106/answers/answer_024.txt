@@ -1,0 +1,6 @@
+# Answer
+LI_UN = []
+for t1, t2 in zip(HR_t1UN, HR_t2UN):
+    LI = (t1 - t2) / (0.5 * (t1 + t2))
+    LI_UN.append(LI)
+LI_UN

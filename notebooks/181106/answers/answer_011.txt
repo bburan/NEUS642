@@ -1,0 +1,9 @@
+# Answer
+def print_greeting(name):
+    if name.endswith('a'):
+        print(name + 'is Queen in the North!')
+    else:
+        print(name + 'is King in the North!')
+       
+print_greeting('Robb')
+print_greeting('Sansa')

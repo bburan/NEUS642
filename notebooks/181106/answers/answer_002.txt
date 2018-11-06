@@ -1,0 +1,5 @@
+# Answer
+dataVNS = dataVNS_raw*10000  
+dataUN = dataUN_raw*1000
+display(dataVNS)
+display(dataUN)

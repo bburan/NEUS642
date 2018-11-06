@@ -1,0 +1,4 @@
+# Answer
+for number in numbers:
+    result = number**2
+    print(result)

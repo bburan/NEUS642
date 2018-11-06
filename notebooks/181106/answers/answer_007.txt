@@ -1,0 +1,6 @@
+# Answer
+t1VNS_hit = tone1VNS['Hit Count']
+t2VNS_hit = tone2VNS['Hit Count']
+t1UN_hit = tone1UN['Hit Count']
+t2UN_hit = tone2UN['Hit Count']
+t1VNS_hit 

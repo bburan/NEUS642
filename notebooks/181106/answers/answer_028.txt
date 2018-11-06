@@ -1,0 +1,6 @@
+# Answer
+LI_VNS_per = sum(LI_VNS_pos) / len(LI_VNS_pos) * 100
+LI_UN_per = sum(LI_UN_pos) / len(LI_UN_pos) * 100
+        
+print(LI_VNS_per)    
+print(LI_UN_per)

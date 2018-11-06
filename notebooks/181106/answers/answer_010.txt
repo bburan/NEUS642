@@ -1,0 +1,3 @@
+# Answer
+for stark in names:
+    print(stark + ' is King in the North!')

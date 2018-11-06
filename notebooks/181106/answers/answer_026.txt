@@ -1,0 +1,12 @@
+# Answer
+LI_VNS_pos = []
+for LI in LI_VNS:
+    is_greater = LI > 0
+    LI_VNS_pos.append(is_greater)
+    
+LI_UN_pos = []
+for LI in LI_UN:
+    is_greater = LI > 0
+    LI_UN_pos.append(is_greater)
+    
+LI_VNS_pos

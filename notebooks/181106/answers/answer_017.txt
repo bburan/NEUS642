@@ -1,0 +1,12 @@
+# Answer
+n_rows = len(t1VNS_hit)
+row_steps = range(0, n_rows, 5)
+
+HR_t1VNS = []
+for i in row_steps:
+    section = t1VNS_hit[i:i+5]
+    n = len(section)
+    if n == 5:
+        HR = section.sum() / n
+        HR_t1VNS.append(HR)
+HR_t1VNS

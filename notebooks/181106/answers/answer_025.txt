@@ -1,0 +1,8 @@
+# Answer
+data = [LI_VNS, LI_UN]
+
+# Multiple box plots on one Axes
+plt.boxplot(data)
+plt.title('Discrimination between two tones')
+plt.xticks([1, 2], ['VNS', 'UN'])
+plt.ylabel('Learning Index')

@@ -1,0 +1,2 @@
+# Answer
+n_rows = len(t1VNS_hit)

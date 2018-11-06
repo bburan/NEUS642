@@ -1,0 +1,4 @@
+# Answer
+subset = t1VNS_hit.iloc[0:5]
+HR = subset.sum() / len(subset)
+HR

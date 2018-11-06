@@ -1,0 +1,3 @@
+# Answer
+item = combined[0]
+print(item)

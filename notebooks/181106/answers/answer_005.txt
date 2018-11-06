@@ -1,0 +1,4 @@
+# Answer
+tone1_UN_mask = dataUN['Reward Type'] == 10
+tone1UN = dataUN.loc[tone1_UN_mask]
+display(tone1UN)

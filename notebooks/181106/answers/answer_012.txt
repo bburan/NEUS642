@@ -1,0 +1,3 @@
+# Answer
+for name in names:
+    print_greeting(name)

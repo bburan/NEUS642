@@ -1,0 +1,8 @@
+# Answer
+n_t1 = len(HR_t1VNS)
+n_t2 = len(HR_t2VNS)
+min_len = min(n_t1, n_t2)
+
+HR_t1VNS = HR_t1VNS[:min_len]
+HR_t2VNS = HR_t2VNS[:min_len]
+len(HR_t1VNS)

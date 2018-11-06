@@ -1,0 +1,7 @@
+# Answer
+HR_t1VNS = []
+row_steps = range(0, n_rows, 5)
+for i in row_steps:
+        HR = t1VNS_hit[i:i+5].sum() / 5
+        HR_t1VNS.append(HR)
+HR_t1VNS

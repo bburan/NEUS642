@@ -1,0 +1,7 @@
+# Answer
+data = [LI_VNS_per, LI_UN_per]
+data
+objects=('VNS','UN')
+plt.bar(objects,data)
+plt.xlabel('Training conditions')
+plt.ylabel('Percentage LI>0 (%)')

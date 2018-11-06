@@ -1,0 +1,2 @@
+# Answer
+tone1_VNS_mask = dataVNS['Reward Type'] == 10
