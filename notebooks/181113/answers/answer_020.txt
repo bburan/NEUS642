@@ -1,0 +1,2 @@
+# Answer
+sc.pl.umap(filt_expr_data, color=["Hoxa1"])

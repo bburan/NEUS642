@@ -1,0 +1,2 @@
+# Answer
+sc.pp.log1p(filt_expr_data)

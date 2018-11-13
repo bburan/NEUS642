@@ -1,0 +1,2 @@
+# Answer
+sc.pl.pca(filt_expr_data, color="Farsb")

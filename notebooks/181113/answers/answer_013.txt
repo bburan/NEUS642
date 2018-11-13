@@ -1,0 +1,2 @@
+# Answer
+sc.pp.regress_out(filt_expr_data, ['n_counts'])

@@ -1,0 +1,2 @@
+# Answer
+sc.pp.scale(filt_expr_data, max_value=10)

@@ -1,0 +1,2 @@
+# Answer
+expr_data = sc.read_csv('SingleCellGeneExpression.csv', delimiter='\t')

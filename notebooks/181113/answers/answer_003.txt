@@ -1,0 +1,3 @@
+# Answer
+expr_data.X
+# It's a numpy array!

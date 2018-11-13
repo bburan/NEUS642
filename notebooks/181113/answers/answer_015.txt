@@ -1,0 +1,3 @@
+# Answer
+sc.tl.pca(filt_expr_data, svd_solver='arpack')
+sc.pl.pca(filt_expr_data)

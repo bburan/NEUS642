@@ -1,0 +1,3 @@
+# Answer
+# Gene names
+expr_data.var_names

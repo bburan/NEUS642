@@ -1,0 +1,3 @@
+# Answer
+sc.tl.umap(filt_expr_data)
+sc.pl.umap(filt_expr_data)

@@ -1,0 +1,2 @@
+# Answer
+sc.pl.pca_variance_ratio(filt_expr_data, log=True)

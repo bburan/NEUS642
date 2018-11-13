@@ -1,0 +1,2 @@
+# Answer
+sc.pp.filter_cells(expr_data, min_genes=200)

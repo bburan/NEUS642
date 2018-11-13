@@ -1,0 +1,2 @@
+# Answer
+filt_expr_data = expr_data[expr_data.obs['n_genes'] > 2000, :]

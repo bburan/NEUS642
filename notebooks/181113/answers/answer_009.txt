@@ -1,0 +1,2 @@
+# Answer
+sc.pl.scatter(expr_data, x='n_counts', y='n_genes')

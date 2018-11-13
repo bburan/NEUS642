@@ -1,0 +1,3 @@
+# Answer
+# Cell names
+expr_data.obs_names

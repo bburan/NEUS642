@@ -1,0 +1,2 @@
+# Answer
+sc.pp.normalize_per_cell(filt_expr_data)

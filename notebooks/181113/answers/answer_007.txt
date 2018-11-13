@@ -1,0 +1,2 @@
+# Answer
+sc.pl.highest_expr_genes(expr_data, n_top=20)

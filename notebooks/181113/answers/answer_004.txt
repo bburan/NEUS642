@@ -1,0 +1,2 @@
+# Answer
+expr_data.X[1:3]

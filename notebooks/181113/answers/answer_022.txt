@@ -1,0 +1,3 @@
+# Answer
+sc.tl.rank_genes_groups(filt_expr_data, 'louvain')
+sc.pl.rank_genes_groups(filt_expr_data, n_genes=20, sharey=False)
