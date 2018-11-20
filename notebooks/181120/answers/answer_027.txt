@@ -1,0 +1,2 @@
+# Answer
+classifier = KNeighborsClassifier(n_neighbors=5)

@@ -1,0 +1,2 @@
+# Answer
+plt.scatter(x="mass", y="neurons", data=bb)

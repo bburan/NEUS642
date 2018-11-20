@@ -1,0 +1,2 @@
+# Answer
+plot_dict = dict(x=x, y=y, desc=desc, ndensity=ndensity, brain_region=brain_region)

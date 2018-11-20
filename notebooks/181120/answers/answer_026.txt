@@ -1,0 +1,2 @@
+# Answer
+display(X.head(),y.head(),y.tail())

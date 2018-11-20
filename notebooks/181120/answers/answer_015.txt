@@ -1,0 +1,4 @@
+# Answer
+p=sns.scatterplot(x="mass", y="neurons", size="neuronal_density", data=bb_means)
+p.set_xscale('log')
+p.set_yscale('log')

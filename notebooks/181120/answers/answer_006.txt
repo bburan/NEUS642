@@ -1,0 +1,3 @@
+# Answer
+bb["neuronal_density"] = bb["neurons"]/bb["mass_mg"]
+bb

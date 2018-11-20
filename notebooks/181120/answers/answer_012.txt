@@ -1,0 +1,2 @@
+# Answer
+sns.scatterplot(x="mass", y="neurons", data=bb_means)

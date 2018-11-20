@@ -1,0 +1,2 @@
+# Answer
+y_pred = classifier.predict(X_test)

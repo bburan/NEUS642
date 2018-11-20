@@ -1,0 +1,4 @@
+# Answer
+bb["cellular_density"] = bb["cells"]/bb["mass_mg"]
+bb["non-neuronal_density"] = bb["non-neurons"]/bb["mass_mg"]
+bb

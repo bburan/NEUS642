@@ -1,0 +1,3 @@
+# Answer
+plot.circle(x='x', y='y', size=10, source=data_for_graph,
+            fill_color=transform('y', mapper))

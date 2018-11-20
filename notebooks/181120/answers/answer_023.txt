@@ -1,0 +1,3 @@
+# Answer
+output_notebook()
+show(plot)

@@ -1,0 +1,3 @@
+# Answer
+bb["mass_mg"] = bb["mass"]*1000
+bb

@@ -1,0 +1,3 @@
+# Answer
+X = df.iloc[:,1:]
+y = df['order']

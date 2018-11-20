@@ -1,0 +1,3 @@
+# Answer
+bb = pd.concat(data)
+bb

@@ -1,0 +1,5 @@
+data_files = glob.glob("*bb.csv")
+
+# Answer
+display(data_files)
+type(data_files)

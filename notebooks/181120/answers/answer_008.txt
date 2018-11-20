@@ -1,0 +1,4 @@
+# Answer
+grouping_var = bb.groupby(["common_name","brain_region"], as_index=False)
+bb_means = grouping_var.mean()
+bb_means

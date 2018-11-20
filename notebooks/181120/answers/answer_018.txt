@@ -1,0 +1,6 @@
+# Answer
+x = bb['mass']
+y = bb['neurons']
+desc = bb['common_name']
+ndensity = bb['neuronal_density']
+brain_region = bb["brain_region"]
