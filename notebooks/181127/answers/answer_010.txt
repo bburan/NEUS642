@@ -1,0 +1,19 @@
+# Answer
+# shuffle behavior
+behavior_shuffled = behavior_state_long.copy()
+np.random.shuffle(behavior_shuffled) # shuffles in place
+behavior_signal_shuffled = psth_long * behavior_shuffled
+
+# create the model as before
+X_pupil = pd.DataFrame({
+    'b(t)*r0(t)': behavior_shuffled * psth_long,
+    'p(t)*r0(t)': pupil_size_long * psth_long,
+    'b(t)': behavior_shuffled.astype('f'),
+    'r0(t)': psth_long,
+    'p(t)': pupil_size_long,
+})
+X_pupil = sm.add_constant(X_pupil)
+
+pupil_model = sm.OLS(Y, X_pupil)
+
+results_pupil = pupil_model.fit()

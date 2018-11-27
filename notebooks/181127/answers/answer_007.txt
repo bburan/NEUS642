@@ -1,0 +1,2 @@
+# Answer
+psth = np.mean(spike_counts, axis=0)

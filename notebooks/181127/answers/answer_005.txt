@@ -1,0 +1,15 @@
+# Answer
+spike_counts_long = np.reshape(spike_counts, -1)
+pupil_size_long = np.reshape(pupil_size, -1)
+
+# or...
+spike_counts_long = np.reshape(spike_counts, spike_counts.shape[0]*spike_counts.shape[1])
+pupil_size_long = np.reshape(pupil_size, spike_counts.shape[0]*spike_counts.shape[1])
+
+# or...
+spike_counts_long = spike_counts.flatten()
+pupil_size_long = pupil_size.flatten()
+
+# or ..
+spike_counts_long = spike_counts.ravel()
+pupil_size_long = pupil_size.ravel()

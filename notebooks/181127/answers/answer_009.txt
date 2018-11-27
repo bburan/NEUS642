@@ -1,0 +1,6 @@
+# Answer
+model = sm.OLS(Y, X)
+
+results = model.fit()
+
+results.summary()

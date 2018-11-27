@@ -1,0 +1,3 @@
+# Answer
+ntile = int(pupil_size_long.shape[0]/spike_counts.shape[-1])
+psth_long = np.tile(psth, ntile)

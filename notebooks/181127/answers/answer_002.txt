@@ -1,0 +1,16 @@
+# Answer
+
+# expand the pupil mask
+pupil_mask_2D = np.expand_dims(pupil_mask, axis=1)
+
+# visualize the mask
+f, ax = plt.subplots(1, 2, sharex=True, sharey=True)
+
+ax[0].imshow(pupil_size, aspect='auto', origin='lower', extent=(0, 1.45, 1, 359))
+ax[0].set_ylabel('Stimulus repetitions')
+ax[0].set_xlabel('Time bins')
+
+ax[1].imshow(pupil_mask_2D, aspect='auto', origin='lower', extent=(0, 1.45, 1, 359))
+ax[1].set_xlabel('Time bins')
+
+f.tight_layout()

@@ -1,0 +1,9 @@
+# Answer
+
+# mask the data
+active_spikes = spike_counts[behavior_state[:,0], :]
+passive_spikes = spike_counts[~behavior_state[:,0], :]
+
+# compute the psth
+active_psth = np.mean(active_spikes, axis=0)
+passive_psth = np.mean(passive_spikes, axis=0)

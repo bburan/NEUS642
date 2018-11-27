@@ -1,0 +1,3 @@
+# Answer
+big_pupil_psth = np.mean(big_pupil_spikes, axis=0)
+small_pupil_psth = np.mean(small_pupil_spikes, axis=0)

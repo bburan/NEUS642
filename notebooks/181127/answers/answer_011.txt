@@ -1,0 +1,13 @@
+# Answer
+X_shuffled = pd.DataFrame({
+    'b(t)*r0(t)': behavior_shuffled * psth_long,
+    'p(t)*r0(t)': pupil_shuffled * psth_long,
+    'b(t)': behavior_shuffled.astype('f'),
+    'r0(t)': psth_long,
+    'p(t)': pupil_shuffled,
+})
+X_shuffled = sm.add_constant(X_shuffled)
+
+shuffled_model = sm.OLS(Y, X_shuffled)
+
+results_shuffled = shuffled_model.fit()
