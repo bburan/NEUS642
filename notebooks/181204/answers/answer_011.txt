@@ -1,0 +1,2 @@
+#Answer
+plt.imshow(WT_masked_data[:, :, 90,0], cmap='gray')

@@ -1,0 +1,3 @@
+# Answer
+WT_original_data = WT_original.get_data()
+display(WT_original_data.shape, type(WT_original_data))

@@ -1,0 +1,3 @@
+#Answer
+PCtxR_mean_vals = PCtxR_masked_data_MRI.mean(axis=(0, 1, 2))
+PCtxR_mean_vals

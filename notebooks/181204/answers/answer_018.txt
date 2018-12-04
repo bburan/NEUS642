@@ -1,0 +1,4 @@
+#Answer
+PCtxR_masked_data_MRI = WT_atlas_reg_data.copy()
+PCtxR_masked_data_MRI[~mask_PCtx_R] = 0
+plt.imshow(PCtxR_masked_data_MRI[:,:,59,0], cmap='gray')

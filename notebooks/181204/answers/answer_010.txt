@@ -1,0 +1,3 @@
+# Answer
+WT_masked_data[~WT_mask_bool] = 0
+display(WT_masked_data.shape)

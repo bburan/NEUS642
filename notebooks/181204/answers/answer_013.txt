@@ -1,0 +1,8 @@
+#Answer
+fig, (axes1, axes2) = plt.subplots(nrows=1, ncols=2, figsize=(10,5))
+axes1.imshow(WT_atlas_reg_data[:,:,59,5], cmap='gray')
+axes1.set_title('Registered to Atlas')
+axes1.axis('off')
+axes2.imshow(Atlas_data[:,:,59,5], cmap='gray')
+axes2.set_title('Atlas Image')
+axes2.axis('off')

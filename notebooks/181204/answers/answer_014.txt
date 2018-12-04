@@ -1,0 +1,3 @@
+#Answer
+mask = region_key['Region'].str.contains("parieto")
+region_key.loc[mask]

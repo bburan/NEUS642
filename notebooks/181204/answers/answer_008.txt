@@ -1,0 +1,2 @@
+# Answer
+WT_masked_data = WT_original_data.copy()

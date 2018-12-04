@@ -1,0 +1,3 @@
+# Answer
+WT_original = nib.load('WT_unregistered.nii.gz')
+display(WT_original.shape, type(WT_original))

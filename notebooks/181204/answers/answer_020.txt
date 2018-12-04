@@ -1,0 +1,8 @@
+#Answer
+timepoints = np.arange(0, 100, 10)
+PCtxR_influx = pd.DataFrame(
+    {'Time': timepoints,
+     'Intensity': PCtxR_mean_vals,
+     'Genotype' : 'WT'
+    })
+PCtxR_influx

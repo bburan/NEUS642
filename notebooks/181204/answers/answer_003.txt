@@ -1,0 +1,5 @@
+# Answer
+plt.imshow(WT_original_data[:,:,90,0], cmap='gray')
+plt.title('Sagittal slice')
+plt.xlabel('Coronal position')
+plt.ylabel('Transverse position')

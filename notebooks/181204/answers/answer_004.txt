@@ -1,0 +1,18 @@
+# Answer
+slice1 = WT_original_data[30,:,:,0]
+slice2 = WT_original_data[45,:,:,0]
+slice3 = WT_original_data[60,:,:,0]
+slice4 = WT_original_data[75,:,:,0]
+
+figure_1, axes = plt.subplots(nrows=2, ncols=2, figsize=(10, 10))
+
+axes[0,0].imshow(slice1, cmap='gray')
+axes[0,1].imshow(slice2, cmap='gray')
+axes[1,0].imshow(slice3, cmap='gray')
+axes[1,1].imshow(slice4, cmap='gray')
+
+#We discussed ravel last week. Here we use it to generate 
+#a flattened array that contains each axes, 
+#which we can then apply a for loop to.
+for ax in axes.ravel():
+    ax.axis('off')

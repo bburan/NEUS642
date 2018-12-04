@@ -1,0 +1,5 @@
+# Answer
+WT_mask_applied = WT_masked_data[WT_mask_bool]
+
+display(WT_masked_data.shape)
+display(WT_mask_applied.shape)

@@ -1,0 +1,7 @@
+#Answer
+PCtxR_influx['Normalized_Intensity'] = PCtxR_influx['Intensity'] / WT_baseline
+
+ASYN_PCtxR_influx['Normalized_Intensity'] = ASYN_PCtxR_influx['Intensity'] / ASYN_baseline
+
+PCtxR_merged = PCtxR_influx.append(ASYN_PCtxR_influx)
+PCtxR_merged

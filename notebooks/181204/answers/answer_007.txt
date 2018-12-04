@@ -1,0 +1,3 @@
+# Answer
+WT_mask_bool = WT_mask_data.astype('bool') 
+plt.imshow(WT_mask_bool[:, :, 90], cmap='gray')

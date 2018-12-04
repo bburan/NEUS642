@@ -1,0 +1,4 @@
+# Part 1 
+# Answer
+PCtxR_masked_data = Atlas_data.copy()
+PCtxR_masked_data[~mask_PCtx_R] = 0

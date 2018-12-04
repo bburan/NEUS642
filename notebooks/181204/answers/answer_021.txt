@@ -1,0 +1,3 @@
+#Answer
+influx_wt = sns.lineplot(x='Time', y='Intensity', data = PCtxR_influx)
+influx_wt.set(xlabel='Time (min)', ylabel='Mean Signal Intensity (a.u.)',title = 'WT Parietal cortex CSF influx')

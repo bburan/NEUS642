@@ -1,0 +1,6 @@
+#Answer
+WT_baseline = PCtxR_influx.at[0, 'Intensity']
+WT_baseline
+
+ASYN_baseline = ASYN_PCtxR_influx.at[0, 'Intensity']
+display(WT_baseline, ASYN_baseline)

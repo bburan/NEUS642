@@ -1,0 +1,37 @@
+# Answer
+def show_slices(slices):
+    figure_2, axes = plt.subplots(nrows=1, ncols=len(slices), figsize=(2*len(slices), 2))
+    for ax, slice in zip(axes, slices):
+        ax.imshow(slice, cmap='gray')
+        ax.axis('off')
+        
+# In this method we manually generate the slices, then apply our function to a list of slices
+slice_0 = WT_original_data[:,:,90,0]
+slice_1 = WT_original_data[:,:,90,1]
+slice_2 = WT_original_data[:,:,90,2]
+slice_3 = WT_original_data[:,:,90,3]
+slice_4 = WT_original_data[:,:,90,4]
+slice_5 = WT_original_data[:,:,90,5]
+slice_6 = WT_original_data[:,:,90,6]
+slice_7 = WT_original_data[:,:,90,7]
+slice_8 = WT_original_data[:,:,90,8]
+slice_9 = WT_original_data[:,:,90,9]
+show_slices([slice_0, slice_1, slice_2, slice_3, slice_4, slice_5, slice_6, slice_7, slice_8, slice_9])
+plt.suptitle("Saggital Time Series");
+
+#OR
+
+# Generate a 3D array of the same sagittal slice over time, 
+# then use a for loop to insert the dataframe at each timepoint into the subplot array
+slices = WT_original_data[:, :, 90, :]
+    
+def show_slices(slices):
+    n_timepoints = slices.shape[-1]
+    figure_width = 2*n_timepoints
+    figure_height = 2
+    figure_4, axes = plt.subplots(1, n_timepoints, figsize=(figure_width, figure_height))
+    for i, ax in enumerate(axes):
+        ax.imshow(slices[..., i], cmap='gray')
+        ax.axis('off')
+        
+show_slices(slices)

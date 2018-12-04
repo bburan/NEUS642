@@ -1,0 +1,5 @@
+# Answer
+WT_masked_data_baseline = WT_masked_data[..., 0]
+translation_affine = np.array([[1, 0, 0, -40], [0,1,0,30], [0,0,1,5], [0,0,0,1]])
+WT_mask_AF = ndi.affine_transform(WT_masked_data_baseline, translation_affine)
+plt.imshow(WT_mask_AF[:,:,90], cmap='gray')

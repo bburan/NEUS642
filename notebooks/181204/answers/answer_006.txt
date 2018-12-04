@@ -1,0 +1,4 @@
+# Answer
+WT_mask = nib.load('WT_mask.nii.gz')
+WT_mask_data=WT_mask.get_data()
+display(WT_mask_data.shape)
