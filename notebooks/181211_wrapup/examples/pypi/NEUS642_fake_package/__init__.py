@@ -17,7 +17,7 @@ def print_report():
         print(f'Your environment is "{environment}" but you should be using "NEUS642_final"')
         return
 
-    for module in ('numpy', 'scipy', 'palettable'):
+    for module in ('numpy', 'scipy', 'palettable', 'matplotlib'):
         try:
             importlib.import_module(module)
             print(f'You successfully installed {module}')
