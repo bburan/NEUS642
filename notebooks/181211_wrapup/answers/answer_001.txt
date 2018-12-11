@@ -1,0 +1,5 @@
+# Answer
+# > conda create -n NEUS642_final python=3.6 numpy scipy matplotlib
+# > conda install -n NEUS642_final -c conda-forge palettable
+# > conda activate NEUS642_final
+# (NEUS642_final) > pip install NEUS642-fake-package
