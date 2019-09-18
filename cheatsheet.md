@@ -1,8 +1,5 @@
 <!-- vim-markdown-toc GFM -->
 
-* [Exajupyter server](#exajupyter-server)
-	* [Collaborative editing](#collaborative-editing)
-	* [Class notebooks](#class-notebooks)
 * [Running your own Jupyter notebook](#running-your-own-jupyter-notebook)
 	* [Creating a conda environment](#creating-a-conda-environment)
 	* [Before each class](#before-each-class)
@@ -12,33 +9,11 @@
 
 <!-- vim-markdown-toc -->
 
-# Exajupyter server
-
-Your Jupyter server has two main folders for class:
-
-* notebooks - This is your personal copy of the notebooks for the course. You can edit and revise the notebooks as needed. Inside this folder will be a separate folder for each week. Each class will have two notebooks. The one ending in `student.ipynb` is the one you should open for class. The one ending in `answers.ipynb` is the one that contains all the answers.
-
-* shared_notebooks - This is a shared folder so you can easily share your work with the rest of your team. All files in this folder are immediately viewable, and editable, by the rest of the class. When working on the draft of your notebook, please make a subfolder in the format `YYMMDD` for the week you are presenting. Jupyter notebooks are not meant to be simultaneously edited, so coordinate with your teammates to ensure that you aren't trying to edit the files at the same time. If you do, you almost certainly will lose some work.
-
-## Collaborative editing
-
-When trying to collaboratively edit notebooks using the shared folder, we recommend that you make a copy of the notebook you're editing rather than editing the same notebook in place. Once you've finished editing the notebook, let the others on your team know the name of the notebook you just created.
-
-As you develop your notebook you may find that a particular library you need isn't installed (i.e., you get an `ImportError`). Please send Brad a message on Gitter (@bburan) and he will install it for you.
-
-## Class notebooks
-
-Each week at the beginning of class, you will need to copy the notebooks and data for that class to your personal `notebooks` folder. To do so, open a terminal and type:
-
-	NEUS642_update_notebooks
-
-By default, the update script will not overwrite existing files. If you ever want to revert to the original copy of the notebook, you can do so by renaming (or deleting) the notebook you want to revert and then running `NEUS642_update_notebooks` again.
-
 # Running your own Jupyter notebook
 
-Once you have installed Anaconda Python ([instructions](index.md)), a new program, `Anaconda prompt` should be available (via the Windows start menu or Mac OS equivalent). Launch this prompt. This prompt behaves much like the `Terminal` available via the Jupyter notebook browser. However, the commands that you are familiar with (e.g., `NEUS642_update_notebooks`) will not be available via your local install.
+Once you have installed Anaconda Python ([instructions](index.md)), a new program, `Anaconda prompt` should be available (via the Windows start menu or Mac OS equivalent). Launch this prompt. This prompt behaves much like the `Terminal` available via the Jupyter notebook browser.
 
-Anaconda Python allows you to run multiple versions of Python (and third-party packages). This is particularly useful if you write a lot of code. For example, if some of your code does not work with a recent version of Python and/or third-party packages, you may wish to stick with an older version until you have the time to update your code. However, you can write new code that takes advantage of features available in newer versions of packages. The way this works is by creating **environments**. An environment defines the version of Python and third-party packages that will be loaded whenever you run your code. By default, Anaconda provides a base environment (called `base`). If you do not specify the environment, then the Python version and third-party packages installed in this environment will be loaded when you run your code.
+Anaconda Python allows you to run multiple versions of Python (and third-party packages). This is particularly useful if you write a lot of code. For example, if some of your code does not work with a recent version of Python and/or third-party packages, you may wish to stick with an older version until you have the time to update your code. However, you can write new code that takes advantage of features available in newer versions of packages. The way this works is by creating **environments**. An environment defines the version of Python and third-party packages that will be loaded whenever you run your code. By default, Anaconda provides a base environment (called `base`). If you do not specify the environment, then the Python version and third-party packages installed in this environment will be loaded when you run your code. For now,
 
 ## Creating a conda environment
 

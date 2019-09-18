@@ -16,7 +16,7 @@
 <!-- vim-markdown-toc -->
 
 ## Overview
-* Time: Tuesdays from 1 to 3pm during the fall 2018 semester (Sept. 25 through December 18).
+* Time: Tuesdays from 1 to 3pm during the winter 2019 semester (January 7 through March 17).
 * Location: Vollum 4M.
 
 Course directors:
@@ -26,8 +26,7 @@ Course directors:
 
 Teaching assistants:
 
-* Erik Burlingame (burlinge@ohsu.edu).
-* Charlie Heller (hellerc@ohsu.edu)
+* Alex Nevue (nevuea@ohsu.edu).
 
 NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
@@ -35,7 +34,9 @@ Before we meet for the first time, please do the following:
 
 * Find a laptop you can bring to class. Each class will have an interactive, hands-on exercise developed by you or one of your classmates. The exercise will be hosted on a server running Python which can be accessed using a web browser. You'll need a laptop which can connect to the OHSU-secure wireless network and run modern web browser (e.g., Firefox or Chrome). We do not have any computers available for load; however, please contact us if you don't have a laptop and we will try to help you locate one.
 
-* If you're not already familiar with Python, please work through the [suggested online courses and/or read the eBook](#python).
+* [Install Anaconda Python](#installing-python)
+
+* If you're not already familiar with Python, please start learning Python 3. You can work through the [suggested online courses and/or read the eBook](#python).
 
 * If you're already familiar with Python, but have only used Python 2, please familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
 
@@ -50,11 +51,11 @@ This is a pass/no pass course with two credits. Grading will be based on the fol
 * Preparation of an exercise for at least one session
 
 ### Developing an exercise
-All exercises will follow the format established in the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp)(days 2 through 4).
+All exercises will follow the format established in the [Python Neurobootcamp](https://github.com/dasaderi/python_neurobootcamp)(days 2 through 4) and [last year's course](https://github.com/bburan/NEUS642/notebooks/2018).
 
 Material for this course will be made freely available as a learning resource for future scientists, both at OHSU and elsewhere. Therefore, we ask that all datasets and materials be licensed under a [Creative Commons](https://creativecommons.org) license and the [BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
-You'll be asked to develop a two-hour exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [exajupyter server](https://exajupyter.ohsu.edu) as well as the [NEUS642 webpage](https://github.com/bburan/NEUS642) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that the packages can be installed before the class.
+You'll be asked to develop a two-hour exercise based on a dataset you'd like to work with. This dataset can be from your own work or obtained from a lab. The exercise will be formatted as a Jupyter Notebook and uploaded to the [NEUS642 webpage](https://github.com/bburan/NEUS642) prior to the start of class. If you require additional third-party packages for running the exercise, please check with the course instructors so that instructions for installing the packages can be provided to students in advance.
 
 All exercises must contain sufficient background to the problem that gives your classmates sufficient background to understand the problem. Your classmates are neuroscientists, but will need some additional, domain-specific knowledge to understand the problem. Do not skip this step, or you will lose your classmates!
 
@@ -69,17 +70,17 @@ Throughout the entire process, you will be expected to consult with the TAs and 
 ## Python
 All students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the fall semester such as those offered by [codecademy](URL=https%3a%2f%2fwww.codecademy.com%2flearn%2flearn-python) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.
 
-We will be using Python 3.6 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) will [no longer support Python 2 after 2020](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
+We will be using Python 3.7 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) will [no longer support Python 2 after 2020](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
 
 ### Python server
-There are several ways to write and run Python code. For this class, we will use [Jupyter notebooks](https://jupyter.org). Notebooks are documents that contain live code, equations, visualizations and narrative text. The notebooks will be hosted on OHSU's [exajupyter server](https://exajupyter.ohsu.edu) ([instructions for using the server](exajupyter.md), [instructions for logging in using a personal computer](citrix.md)). We have a [cheat sheet](cheatsheet.md) for using the exajupyter notebooks.
+There are several ways to write and run Python code. For this class, we will use [Jupyter notebooks](https://jupyter.org). Notebooks are documents that contain live code, equations, visualizations and narrative text. Prior to each class you will need to download the files and potentially update some packages.
+
+We have a [cheat sheet](cheatsheet.md) for using the jupyter notebooks.
 
 We will always make sure that the server contains the latest materials and third-party software required for completing the weekly project. If you choose to use your own copy of Python, will be responsible for installing third-party libraries and download new files (i.e., notebooks and datasets) to your computer before the start of class each week.
 
-If you have an OHSU account, you can use the exajupyter server. To access this from off-campus, you will likely need to request remote access from IT using either [VPN](https://o2.ohsu.edu/information-technology-group/help-desk/it-help-pages/vpn-install-win7.cfm) or [Citrix Receiver](https://o2.ohsu.edu/information-technology-group/help-desk/it-help-pages/remote-windows-web.cfm). For VPN, you will need a computer with full-disk encryption. If you don't already have this, use Citrix Receiver. If you do not have an OHSU account, you will need to use your own Python install.
-
 ### Installing Python
-Your access to exajupyter will only last for the duration of the course. By the end of the course, we would like you to have a working version of Python on your computer. These days I recommend the [Anaconda Python Distribution](https://www.anaconda.com) since it is free to use (both for commercial and academic use), can be installed on computers without administrative privileges and makes it easy to install various third-party Python packages. To get started with your own copy of Python::
+These days I recommend the [Anaconda Python Distribution](https://www.anaconda.com) since it is free to use (both for commercial and academic use), can be installed on computers without administrative privileges and makes it easy to install various third-party Python packages. To get started with your own copy of Python::
 
 * [Download](https://www.anaconda.com/download) the installer and run it. Select all default options. When it asks you whom to install for, select "Just Me" (the recommended option). You can skip the option to install Microsoft VsCode.
 
@@ -87,7 +88,7 @@ Your access to exajupyter will only last for the duration of the course. By the 
 
     * Anaconda Navigator - A GUI for managing Anaconda Python (including installing and upgrading third-party libraries). It also offers a launcher for key applications such as Jupyter Notebook, Jupyter Lab and Spyder).
 	* Anaconda Prompt - A command line prompt that allows you to install and upgrade third-party libraries (an alternative to the GUI offered via Anaconda Navigator).
-	* Jupyter Notebook - A local version of the exajupyter server that we're using.
+	* Jupyter Notebook - A local version of the notebook server that we're using.
 	* Spyder - An integrated desktop environment for Python.
 
 ### Code editors
