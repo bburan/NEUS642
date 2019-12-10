@@ -1,6 +1,0 @@
-[submodule "other_notebooks/Learn-Pandas"]
-	path = notebooks/other/Learn-Pandas
-	url = https://github.com/tdpetrou/Learn-Pandas
-[submodule "other_notebooks/python_neurobootcamp"]
-	path = notebooks/other/python_neurobootcamp
-	url = https://github.com/dasaderi/python_neurobootcamp
