@@ -2,7 +2,10 @@
 
 <!-- vim-markdown-toc GFM -->
 
+* [Time and location](#time-and-location)
+* [Course staff](#course-staff)
 * [Overview](#overview)
+* [Preparing for the course](#preparing-for-the-course)
 * [Assessment](#assessment)
 	* [Grading](#grading)
 	* [Developing an exercise](#developing-an-exercise)
@@ -15,30 +18,37 @@
 
 <!-- vim-markdown-toc -->
 
-## Overview
+## Time and location
 * Time: Tuesdays from 1 to 3pm during the winter 2019 semester (January 7 through March 17).
 * Location: Vollum 4M.
 
-Course directors:
-
+## Course staff
+### Course directors:
 * *Brad Buran, Ph.D.*. Research instructor in the Oregon Hearing Research Center (buran@ohsu.edu).
 * *Stephen David, Ph.D.*. Assistant professor in the Oregon Hearing Research Center (davids@ohsu.edu).
 
-Teaching assistants:
+### Teaching assistants:
+* Emily Leff (leff@ohsu.edu).
+* Alexandria Lassetter (lassetta@ohsu.edu).
+* Alexander Tomlinson (tomlinsa@ohsu.edu)
 
-* Alex Nevue (nevuea@ohsu.edu).
-
+## Overview
 NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
+## Preparing for the course
 Before we meet for the first time, please do the following:
 
-* Find a laptop you can bring to class. Each class will have an interactive, hands-on exercise developed by you or one of your classmates. The exercise will be hosted on a server running Python which can be accessed using a web browser. You'll need a laptop which can connect to the OHSU-secure wireless network and run modern web browser (e.g., Firefox or Chrome). We do not have any computers available for load; however, please contact us if you don't have a laptop and we will try to help you locate one.
+* Sign up for our [NEUS642 Slack workspace](neus642.slack.com). If you haven't already received the invite, please contact one of the course staff for assistance.
 
-* [Install Anaconda Python](#installing-python)
+* Find a laptop you can bring to class. Each class will have an interactive, hands-on exercise developed by you or one of your classmates. You'll be working on the exercise using your laptop. We do not have any computers available for loan.
+
+* [Install Anaconda Python](#installing-python). If you have trouble with installing Anaconda Python before the first day of class, you can contact the course staff on Slack for assistance.
 
 * If you're not already familiar with Python, please start learning Python 3. You can work through the [suggested online courses and/or read the eBook](#python).
 
-* If you're already familiar with Python, but have only used Python 2, please familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
+* If you're already familiar with Python, but have only used Python 2, please familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html). Support for Python 2 sunset on January 1, 2020.
+
+* Work through the five days of the [Python NeuroBootcamp](https://github.com/dasaderi/python_neurobootcamp). You can [download](https://github.com/dasaderi/python_neurobootcamp/archive/master.zip) the notebooks to your computer and run them using Jupyter Notebook (which comes with Anaconda Python). If you have any trouble or questions, you can post them to the Slack channel. As a bonus, you may work through the notebooks from the [fall 2018 semester of NEUS642](https://github.com/bburan/NEUS642/notebooks/2018).
 
 * Think about a dataset that you would like to work on for the class. At some point during the course, you will be asked to develop an exercise based on this dataset (either individually or in a small group of two or three). I may reach out to some of you in the weeks leading up to the course and ask you to prepare your exercise in advance so that we have exercises for the first few weeks of class.
 
@@ -101,11 +111,9 @@ You need a way to write Python code. The best way to do this is to use a dedicat
 * [JupyterLab](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906). This is the next-generation user interface for Jupyter and will likely supplant Jupyter's Notebook interface. It allows you to open multiple file types (including notebooks) side-by-side. Although this is still beta software, it will likely replace the standard Jupyter Notebook server by the end of 2018.
 
 ### Course-specific resources
-
-* [NEUS642 on Gitter](https://gitter.im/NEUS642) - Our online chatroom. The course staff will try to monitor this when we can. Use this for asking questions.
+* [NEUS642 on Slack](https://neus642.slack.com) - Our online chatroom. The course staff will try to monitor this when we can. Use this for asking questions.
 * [NEUS642 on Github](https://github.com/bburan/NEUS642) - The source code repository for the class. All new files and updates will be posted here.
 
 ### Other resources
-
 There are many resources available online for learning Python. [Here are
 a few](resources.md).
