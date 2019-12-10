@@ -40,7 +40,7 @@ Before we meet for the first time, please do the following:
 
 * Sign up for our [NEUS642 Slack workspace](neus642.slack.com). If you haven't already received the invite, please contact one of the course staff for assistance.
 
-* Find a laptop you can bring to class. Each class will have an interactive, hands-on exercise developed by you or one of your classmates. You'll be working on the exercise using your laptop. We do not have any computers available for loan.
+* Find a laptop you can bring to class. Each class will have an interactive, hands-on exercise developed by you or one of your classmates. You'll be working on the exercise using your laptop.
 
 * [Install Anaconda Python](#installing-python). If you have trouble with installing Anaconda Python before the first day of class, you can contact the course staff on Slack for assistance.
 
@@ -78,16 +78,14 @@ Now, write the code to perform these steps and generate your plot. Once the code
 Throughout the entire process, you will be expected to consult with the TAs and course organizers to ensure that your exercise is of appropriate level and scope for the class. It's better to be a little short than to go over time!
 
 ## Python
-All students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the fall semester such as those offered by [codecademy](URL=https%3a%2f%2fwww.codecademy.com%2flearn%2flearn-python) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.
+All students are expected to have a basic knowledge of programming. If you haven't worked with Python before, please take an online introductory course prior to the start of class such as those offered by [codecademy](URL=https%3a%2f%2fwww.codecademy.com%2flearn%2flearn-python) and [udacity](https://www.udacity.com/course/intro-to-computer-science--cs101). [A Byte of Python](https://python.swaroopch.com/) is a free eBook; however, you will need your own copy of Python to run and test the code.
 
-We will be using Python 3.7 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) will [no longer support Python 2 after 2020](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
+We will be using Python 3.7 for the course. Some of you may be familiar with older versions of Python such as Python 2.7. However, many popular third-party packages that you may use in your research (e.g., Numpy, Scipy and Pandas) [longer support Python 2](https://python3statement.org). If you have been using Python 2, take a few minutes to familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html).
 
 ### Python server
 There are several ways to write and run Python code. For this class, we will use [Jupyter notebooks](https://jupyter.org). Notebooks are documents that contain live code, equations, visualizations and narrative text. Prior to each class you will need to download the files and potentially update some packages.
 
-We have a [cheat sheet](cheatsheet.md) for using the jupyter notebooks.
-
-We will always make sure that the server contains the latest materials and third-party software required for completing the weekly project. If you choose to use your own copy of Python, will be responsible for installing third-party libraries and download new files (i.e., notebooks and datasets) to your computer before the start of class each week.
+We have a [cheat sheet](cheatsheet.md) for using the Jupyter notebooks.
 
 ### Installing Python
 These days I recommend the [Anaconda Python Distribution](https://www.anaconda.com) since it is free to use (both for commercial and academic use), can be installed on computers without administrative privileges and makes it easy to install various third-party Python packages. To get started with your own copy of Python::
