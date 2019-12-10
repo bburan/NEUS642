@@ -19,7 +19,7 @@
 <!-- vim-markdown-toc -->
 
 ## Time and location
-* Time: Tuesdays from 1 to 3pm during the winter 2019 semester (January 7 through March 17).
+* Time: Tuesdays from 1 to 3pm during the winter 2020 semester (January 7 through March 17).
 * Location: Vollum 4M.
 
 ## Course staff
