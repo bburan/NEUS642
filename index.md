@@ -2,9 +2,9 @@
 
 <!-- vim-markdown-toc GFM -->
 
+* [Overview](#overview)
 * [Time and location](#time-and-location)
 * [Course staff](#course-staff)
-* [Overview](#overview)
 * [Preparing for the course](#preparing-for-the-course)
 * [Assessment](#assessment)
 	* [Grading](#grading)
@@ -17,6 +17,9 @@
 	* [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+
+## Overview
+NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
 ## Time and location
 * Time: Tuesdays from 1 to 3pm during the winter 2020 semester (January 7 through March 17).
@@ -31,9 +34,6 @@
 * Emily Leff (leff@ohsu.edu).
 * Alexandria Lassetter (lassetta@ohsu.edu).
 * Alexander Tomlinson (tomlinsa@ohsu.edu)
-
-## Overview
-NEUS 642 is a hands-on course on the basics of Python programming for analysis of neuroscience-related data. By the end of the course, students will have learned basic programming tasks, including loading and manipulating data sets, signal processing, image processing, and plotting. The course will be highly interactive. Students (with the support of TAs and instructors) will be expected to design and lead exercises during the class, and they are encouraged to bring their own data and/or analysis problem to the course. The course is open to students of all skill levels; however, a basic knowledge of programming is encouraged.
 
 ## Preparing for the course
 Before we meet for the first time, please do the following:
