@@ -38,7 +38,7 @@ NEUS 642 is a hands-on course on the basics of Python programming for analysis o
 ## Preparing for the course
 Before we meet for the first time, please do the following:
 
-* Sign up for our [NEUS642 Slack workspace](neus642.slack.com). If you haven't already received the invite, please contact one of the course staff for assistance.
+* Sign up for our [NEUS642 Slack workspace](https://neus642.slack.com). If you haven't already received the invite, please contact one of the course staff for assistance.
 
 * Find a laptop you can bring to class. Each class will have an interactive, hands-on exercise developed by you or one of your classmates. You'll be working on the exercise using your laptop.
 
