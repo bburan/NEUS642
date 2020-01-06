@@ -1,0 +1,2 @@
+# Answer
+ax = mean_thresholds_unstacked.plot(kind='bar')

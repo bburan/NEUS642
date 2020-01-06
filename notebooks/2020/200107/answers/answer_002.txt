@@ -1,0 +1,3 @@
+# Answer
+exposure_data = pd.read_csv('exposure_data.csv', index_col=0)
+exposure_data

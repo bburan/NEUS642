@@ -1,0 +1,3 @@
+# Answer
+column = exposure_data.loc[:, 'exposure_date']
+column

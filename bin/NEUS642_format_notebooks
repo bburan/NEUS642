@@ -1,4 +1,4 @@
-#! /bin/python3
+#! python
 
 from copy import deepcopy
 from functools import partial

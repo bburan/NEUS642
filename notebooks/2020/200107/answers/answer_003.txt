@@ -1,0 +1,3 @@
+# Answer
+value = exposure_data.loc['Subject 10', 'exposure_date']
+value

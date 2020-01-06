@@ -1,0 +1,3 @@
+# Answer
+row = exposure_data.loc['Subject 10', :]
+row

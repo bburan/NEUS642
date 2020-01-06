@@ -1,0 +1,4 @@
+# Answer
+grouping = data.groupby(['exposure_level', 'days_re_exposure'])
+mean_thresholds = grouping['threshold'].mean()
+mean_thresholds
