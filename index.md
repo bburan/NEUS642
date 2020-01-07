@@ -5,6 +5,8 @@
 * [Overview](#overview)
 * [Time and location](#time-and-location)
 * [Course staff](#course-staff)
+	* [Course directors:](#course-directors)
+	* [Teaching assistants:](#teaching-assistants)
 * [Preparing for the course](#preparing-for-the-course)
 * [Assessment](#assessment)
 	* [Grading](#grading)
@@ -48,7 +50,7 @@ Before we meet for the first time, please do the following:
 
 * If you're already familiar with Python, but have only used Python 2, please familiarize yourself with the [differences between Python 2 and 3](http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html). Support for Python 2 sunset on January 1, 2020.
 
-* Work through the five days of the [Python NeuroBootcamp](https://github.com/dasaderi/python_neurobootcamp). You can [download](https://github.com/dasaderi/python_neurobootcamp/archive/master.zip) the notebooks to your computer and run them using Jupyter Notebook (which comes with Anaconda Python). If you have any trouble or questions, you can post them to the Slack channel. As a bonus, you may work through the notebooks from the [fall 2018 semester of NEUS642](https://github.com/bburan/NEUS642/notebooks/2018).
+* Work through the five days of the [Python NeuroBootcamp](https://github.com/dasaderi/python_neurobootcamp). You can [download](https://github.com/dasaderi/python_neurobootcamp/archive/master.zip) the notebooks to your computer and run them using Jupyter Notebook (which comes with Anaconda Python). If you have any trouble or questions, you can post them to the Slack channel. As a bonus, you may work through the notebooks from the [fall 2018 semester of NEUS642](https://github.com/bburan/NEUS642/tree/master/notebooks/2018).
 
 * Think about a dataset that you would like to work on for the class. At some point during the course, you will be asked to develop an exercise based on this dataset (either individually or in a small group of two or three). I may reach out to some of you in the weeks leading up to the course and ask you to prepare your exercise in advance so that we have exercises for the first few weeks of class.
 
