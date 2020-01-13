@@ -1,0 +1,4 @@
+# Answer
+sem_grouped_latency = type_10_correct.groupby(['group', 'modality', 'condition'])['Latency'].sem()
+sem_grouped_latency_unstacked = sem_grouped_latency.unstack('condition')
+sem_grouped_latency_unstacked

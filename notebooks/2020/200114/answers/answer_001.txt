@@ -1,0 +1,3 @@
+# Answer
+type_10 = full_data.loc[mask]
+type_10.head()

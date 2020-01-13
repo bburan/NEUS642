@@ -1,0 +1,3 @@
+# Answer
+sem_condition_latency = type_10_correct.groupby(['condition'])['Latency'].sem()
+sem_condition_latency

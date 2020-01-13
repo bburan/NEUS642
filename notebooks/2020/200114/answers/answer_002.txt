@@ -1,0 +1,3 @@
+# Answer
+percent_correct = type_10.groupby(['subject', 'modality', 'condition'])['Correct'].mean() * 100
+percent_correct

@@ -1,0 +1,4 @@
+# Answer
+modality_latency = type_10_correct.groupby(['modality'])['Latency'].mean()
+sem_modality_latency = type_10_correct.groupby(['modality'])['Latency'].sem()
+modality_latency.plot(kind = 'bar', yerr = sem_modality_latency)

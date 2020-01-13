@@ -1,0 +1,3 @@
+# Answer
+mean_latency = type_10_correct.groupby(['subject', 'modality', 'condition'])['Latency'].mean() 
+mean_latency
