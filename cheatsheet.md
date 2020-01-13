@@ -44,7 +44,7 @@ If you used the default folder above, the notebooks will now be available at:
 
 While still in the Anaconda prompt (with the NEUS642 environment active), change to the notebooks folder and launch a Jupyter notebook:
 
-	cd NEUS642/notebooks
+	cd classes/NEUS642/notebooks
 	jupyter notebook
 
 A browser tab should automatically open. If it doesn't, go to http://localhost:8888 in your browser.
@@ -53,7 +53,6 @@ A browser tab should automatically open. If it doesn't, go to http://localhost:8
 
 To copy the new notebooks, open an Anaconda prompt and CD to your NEUS642 folder:
 
-	conda activate NEUS642
 	cd classes/NEUS642
 	git pull
 
@@ -63,7 +62,6 @@ We may also have instructions on additional packages and libraries that need to 
 
 Open an Anaconda prompt and run the following:
 
-	conda activate NEUS642
 	cd classes/NEUS642/notebooks
 	jupyter notebook
 
@@ -75,9 +73,10 @@ A browser tab should then open with the Jupyter notebook.
 
 The course staff has a script that will automatically format your notebook in preparation for class. The script will:
 
-* Scan for all markdown headings (lines starting with `#`, `##`, `###`, etc.) and create a table of contents at the top of the file.
-* Scan for comments in code cells starting with `# Answer`, deleting everything from `# Answer` to the end of the cell, and insert `# Your answer here`. Note that the cell can contain text *before* the `# Answer` line that will not get deleted.
-* Scan for all markdown headings (e.g., `## Exercise`, `### Exercise`, etc.) and auto-number them.
+* Scan for all markdown headings (lines starting with `#`, `##`, `###`, etc.) and create a table of contents at the top of the file listing these headings.
+* Scan for comments in code cells starting with `# Answer`. For each code cell, everything after `# Answer` to the end of the cell will be deleted and replaced with `# Your answer here`. Note that the cell can contain text *before* the `# Answer` line that will not get deleted.
+* Scan for all exercises starting with a markdown heading (e.g., `## Exercise`, `### Exercise`, etc.) and auto-number them. **Do not number your exercises**. 
+* You may inclue a title for the exercise in the format `Exercise - title` or `Exercise: title`.
 
 To take advantage of this script, ensure that you use markdown formatting for your headers and do not number your exercises:
 
@@ -93,7 +92,7 @@ To take advantage of this script, ensure that you use markdown formatting for yo
 	# Main header
 	Text goes here
 
-	## Exercise
+	## Exercise - load some data
 	Text goes here
 
 For your answers, the cell containing the answer should be in the format:
