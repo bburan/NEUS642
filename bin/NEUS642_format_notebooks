@@ -6,14 +6,21 @@ import json
 import numpy as np
 import os.path
 import re
+import subprocess
 
 
 header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
 answer_pattern = re.compile(r'^#\s?answer.*$', flags=re.IGNORECASE)
+exercise_pattern = re.compile(r'^Exercise\s*(?:[-:]\s*([\w, ]+))?$')
+
 template = '<a name="#{}"></a>\n{} {}\n' \
     '<a href="#Overview">Return to overview</a>\n'
 
+
 def slugify(title):
+    '''
+    Convert title to hyperlink-compatible anchor
+    '''
     return title.strip().replace(' ', '-')
 
 
@@ -21,9 +28,13 @@ def repl(tracker, match):
     anchor, title = match.groups()
     title = title.strip(' \t\n\r:')
 
-    if title == 'Exercise':
+    if title.startswith('Exercise'):
+        match = exercise_pattern.match(title)
+        descr = match.groups('')[0]
         tracker['n_exercises'] += 1
         title = f"Exercise {tracker['n_exercises']}"
+        if descr:
+            title = f"{title}: {descr}"
     if title in tracker['titles']:
         raise ValueError(f'Duplicate title {title}')
 
@@ -134,5 +145,12 @@ def main(base_file):
 
 if __name__ == '__main__':
     import sys
+
+    # Get filename
     base_file = sys.argv[1]
+
+    # Run nbstripout first
+    result = subprocess.check_output(['nbstripout', base_file])
+
+    # Now, create notebooks
     main(base_file)
