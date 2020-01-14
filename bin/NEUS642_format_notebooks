@@ -10,7 +10,7 @@ import subprocess
 
 
 header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
-answer_pattern = re.compile(r'^#\s?answer.*$', flags=re.IGNORECASE)
+answer_pattern = re.compile(r'^#+\s+answer.*$', flags=re.IGNORECASE)
 exercise_pattern = re.compile(r'^Exercise\s*(?:[-:]\s*([\w, ]+))?$')
 
 template = '<a name="#{}"></a>\n{} {}\n' \
