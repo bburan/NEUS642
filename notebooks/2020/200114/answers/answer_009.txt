@@ -1,4 +1,4 @@
 # Answer
-sem_grouped_latency = type_10_correct.groupby(['group', 'modality', 'condition'])['Latency'].sem()
-sem_grouped_latency_unstacked = sem_grouped_latency.unstack('condition')
-sem_grouped_latency_unstacked
+modality_latency = type_10_correct.groupby(['modality'])['Latency'].mean()
+sem_modality_latency = type_10_correct.groupby(['modality'])['Latency'].sem()
+modality_latency.plot(kind = 'bar', yerr = sem_modality_latency)

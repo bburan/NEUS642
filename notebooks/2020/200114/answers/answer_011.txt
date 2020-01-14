@@ -1,9 +1,3 @@
 # Answer
-grouped_pc = type_10.groupby(['group', 'modality', 'condition'])['Correct'].mean() * 100
-grouped_pc_unstacked = grouped_pc.unstack('condition')
-sem_grouped_pc = type_10.groupby(['group', 'modality', 'condition'])['Correct'].sem() * 100
-sem_grouped_pc_unstacked = sem_grouped_pc.unstack('condition')
-
-axes = grouped_pc_unstacked.plot(kind='bar', yerr=sem_grouped_pc_unstacked)
-axes.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
-axes.set_ylabel('Percent correct (%)');
+unstacked_grouped_latency = grouped_latency.unstack('condition')
+unstacked_grouped_latency

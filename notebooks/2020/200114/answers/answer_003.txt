@@ -1,4 +1,3 @@
-# Answer 
-mask = type_10['Correct'] == 1 
-type_10_correct = type_10.loc[mask]
-type_10_correct.head()
+# Answer
+percent_correct = type_10.groupby(['subject', 'modality', 'condition'])['Correct'].mean() * 100
+percent_correct

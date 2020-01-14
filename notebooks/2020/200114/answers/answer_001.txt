@@ -1,3 +1,3 @@
 # Answer
-type_10 = full_data.loc[mask]
-type_10.head()
+FirstFile = pd.read_csv('data/1001_Aud_N0-Back_run1.csv')
+FirstFile

@@ -1,2 +1,3 @@
 # Answer
-grouped_latency.unstack('condition').plot(kind='bar', yerr=sem_grouped_latency_unstacked)
+grouped_latency = type_10_correct.groupby(['group','modality','condition'])['Latency'].mean()
+grouped_latency

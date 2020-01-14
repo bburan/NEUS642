@@ -1,4 +1,3 @@
 # Answer
-condition_latency = type_10_correct.groupby(['condition'])['Latency'].mean()
-condition_latency.plot(kind='bar')
-plt.ylabel('Reaction Time (ms)')
+mean_latency = type_10_correct.groupby(['subject', 'modality', 'condition'])['Latency'].mean() 
+mean_latency

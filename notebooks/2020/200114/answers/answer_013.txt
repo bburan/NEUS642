@@ -1,0 +1,2 @@
+# Answer
+grouped_latency.unstack('condition').plot(kind='bar', yerr=sem_grouped_latency_unstacked)
