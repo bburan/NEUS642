@@ -1,4 +1,3 @@
 # Answer
-grouping = data.groupby(['exposure_level', 'days_re_exposure'])
-mean_thresholds = grouping['threshold'].mean()
-mean_thresholds
+data['days_re_exposure'] = data['abr_date'] - data['exposure_date']
+data

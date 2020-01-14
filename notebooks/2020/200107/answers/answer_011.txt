@@ -1,4 +1,2 @@
 # Answer
-sem_thresholds = grouping['threshold'].sem()
-sem_thresholds_unstacked = sem_thresholds.unstack('exposure_level')
-sem_thresholds_unstacked
+ax = mean_thresholds_unstacked.plot(kind='bar')

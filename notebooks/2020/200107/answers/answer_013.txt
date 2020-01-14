@@ -1,5 +1,2 @@
 # Answer
 ax = mean_thresholds_unstacked.plot(kind='bar', yerr=sem_thresholds_unstacked)
-ax.set_xlabel('Days re exposure')
-ax.set_ylabel('Threshold (dB SPL)')
-ax.set_xticklabels(['-3', '1', '14'])
