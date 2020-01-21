@@ -7,21 +7,22 @@ import numpy as np
 import os.path
 import re
 import subprocess
+import uuid
 
 
 header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
 answer_pattern = re.compile(r'^#+\s+answer.*$', flags=re.IGNORECASE)
-exercise_pattern = re.compile(r'^Exercise\s*(?:[-:]\s*([\w, ]+))?$')
+exercise_pattern = re.compile(r'^Exercise\s*(?:\d+\s*)(?:[-:]\s*([\w, ]+))?$')
 
-template = '<a name="#{}"></a>\n{} {}\n' \
-    '<a href="#Overview">Return to overview</a>\n'
+#template = '<a id="{}"></a>\n{} {}\n' \
+#    '<a href="#Overview">Return to overview</a>\n'
 
 
 def slugify(title):
     '''
-    Convert title to hyperlink-compatible anchor
+    Uses random UUID to help differentiate between identical titles
     '''
-    return title.strip().replace(' ', '-')
+    return uuid.uuid4()
 
 
 def repl(tracker, match):
@@ -35,8 +36,6 @@ def repl(tracker, match):
         title = f"Exercise {tracker['n_exercises']}"
         if descr:
             title = f"{title}: {descr}"
-    if title in tracker['titles']:
-        raise ValueError(f'Duplicate title {title}')
 
     slug = slugify(title)
     indent = len(anchor)
@@ -47,7 +46,7 @@ def repl(tracker, match):
     tracker['titles'].append(title)
     tracker['slugs'].append(slug)
 
-    return f'<a name="#{slug}"></a>\n{"#" * indent} {title}\n' \
+    return f'<a id="{slug}"></a>\n{"#" * indent} {title}\n' \
             '<a href="#Overview">Return to overview</a>\n'
 
 
