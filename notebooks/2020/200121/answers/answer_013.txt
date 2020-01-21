@@ -1,0 +1,2 @@
+# Answer
+np.max(my_image[0, 0, :, :, :, 0], axis=0)

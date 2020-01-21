@@ -1,0 +1,7 @@
+# Answer
+def x_center_orth(image, filename):
+    _, _, z_axis, y_axis, x_axis, _ = image.shape
+    x = round(x_axis/2)
+    orthogonal = image[0, 0, :, :, x,0]
+    im = Image.fromarray(orthogonal)
+    im.save(f'{filename}_orth.tif')

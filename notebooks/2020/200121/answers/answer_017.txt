@@ -1,0 +1,8 @@
+# Answer
+def max_project(image):
+    projection = np.max(image[0, 0, :, :, :, 0], axis = 0)
+    im = Image.fromarray(projection)
+    im.save('MIP.tif')
+    return projection
+
+max_project(my_image)
