@@ -1,0 +1,5 @@
+template = '{3} {2} of {0} on {1}'
+
+# Answer
+sentence = template.format(item, location, unit, quantity)
+print(sentence)

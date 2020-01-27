@@ -1,0 +1,4 @@
+# Answer
+def lightbulbs_needed(size, lumens):
+    n = size/lumens**2
+    return n

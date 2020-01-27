@@ -1,0 +1,6 @@
+template = '{amount} milli{unit} of {item} on {where}'
+
+# Answer
+converted_quantity = quantity * 1000
+sentence = template.format(item=item, where=location, unit=unit, amount=converted_quantity)
+print(sentence)

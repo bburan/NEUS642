@@ -1,0 +1,5 @@
+template = '{} {} of {} on {}'
+
+# Answer
+sentence = template.format(quantity, unit, item, location)
+print(sentence)
