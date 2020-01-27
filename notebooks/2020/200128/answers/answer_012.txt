@@ -4,5 +4,5 @@ plt.plot(x, y)
 
 # Answer 
 residuals = mean_responses_male - y
-sum_of_squares = np.mean(residuals**2)
+sum_of_squares = np.sum(residuals**2)
 sum_of_squares
