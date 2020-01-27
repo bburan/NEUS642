@@ -1,0 +1,3 @@
+# Answer 
+y_data_male = mean_responses_male.values
+y_data_male

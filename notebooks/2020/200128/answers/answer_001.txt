@@ -1,0 +1,5 @@
+# Answer
+filename = "dose_response_male.csv"
+
+dose_response_male = pd.read_csv(filename, index_col=0)
+dose_response_male

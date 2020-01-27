@@ -1,0 +1,3 @@
+# Answer
+dose_response_male['Log[M]'] = np.log10(dose_response_male['concentration_in_M'])
+dose_response_male

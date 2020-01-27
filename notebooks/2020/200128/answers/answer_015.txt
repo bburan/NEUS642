@@ -1,0 +1,8 @@
+plt.plot(x_data, male_line, color='deepskyblue')
+
+# Answer 
+plt.errorbar(x_data, mean_responses_male, yerr=sem_responses_male, marker='o', linestyle='', capsize=3, color='blue')
+plt.xlabel('Log[M]')
+plt.ylabel('% UK')
+plt.title('Morphine Dose Response')
+plt.show()

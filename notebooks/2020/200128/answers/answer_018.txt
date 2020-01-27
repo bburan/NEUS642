@@ -1,0 +1,6 @@
+# Answer 
+fit_labels = ['bottom', 'top', 'EC50 (M)', 'hill slope']
+fit_series_m = pd.Series(male_fit, index = fit_labels)
+fit_series_f = pd.Series(female_fit, index = fit_labels)
+print("Males: \n" + str(fit_series_m))
+print("\nFemales: \n" + str(fit_series_f))

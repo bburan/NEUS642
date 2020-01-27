@@ -1,0 +1,12 @@
+# Answer
+female_line = hill_eq(x_data, *female_fit)
+
+plt.plot(x_data, male_line, color='deepskyblue')
+plt.plot(x_data, female_line, color='plum')
+plt.errorbar(x_data, mean_responses_male, yerr=sem_responses_male, marker='o', linestyle='', capsize=3, color = 'blue')
+plt.errorbar(x_data, mean_responses_female, yerr=sem_responses_female, marker='o', linestyle='', capsize=3, color='purple')
+plt.xlabel('Log[M]')
+plt.ylabel('% UK')
+plt.title('Morphine Dose Response')
+plt.legend(['Male Fit', 'Female Fit', 'Male', 'Female'])
+plt.show()

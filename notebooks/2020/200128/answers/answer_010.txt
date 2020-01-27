@@ -1,0 +1,4 @@
+# Answer 
+def hill_eq(x, bottom, top, EC50, hillslope):
+    y = bottom + (top-bottom)/(1+10**(np.log10(EC50)-x))
+    return y 
