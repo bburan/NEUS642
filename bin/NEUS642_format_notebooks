@@ -11,11 +11,8 @@ import uuid
 
 
 header_pattern = re.compile(r'(?:^|\n)(#+)\s+(.+)\s*(?=$|\n)')
-answer_pattern = re.compile(r'^#+\s+answer.*$', flags=re.IGNORECASE)
+answer_pattern = re.compile(r'^\s*#+\s+answer.*$', flags=re.IGNORECASE)
 exercise_pattern = re.compile(r'^Exercise\s*(?:\d+\s*)?(?:[-:]\s*([\w, ]+))?$')
-
-#template = '<a id="{}"></a>\n{} {}\n' \
-#    '<a href="#Overview">Return to overview</a>\n'
 
 
 def slugify(title):
