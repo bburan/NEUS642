@@ -1,0 +1,11 @@
+# Answer
+Params['T'] = T
+Params['numcomp'] = numcomp
+Params['basep'] = basep
+Params['leng'] = leng
+Params['stdur'] = stdur
+Params['mf'] = mf
+Params['xSize'] = xSize
+Params['tSize'] = tSize
+Params['mod_depth'] = mod_depth
+Params

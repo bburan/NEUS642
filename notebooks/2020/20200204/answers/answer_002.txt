@@ -1,0 +1,2 @@
+# Answer
+stacked = np.stack(torc_list, axis=2)

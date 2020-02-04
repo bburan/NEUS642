@@ -1,0 +1,3 @@
+# Answer
+octaves = int(np.log2(highest_frequency/lowest_frequency))
+octaves

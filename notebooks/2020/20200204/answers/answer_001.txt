@@ -1,0 +1,4 @@
+# Answer
+for val in response.values():
+    fval = np.swapaxes(np.squeeze(val), 0, 1)
+    torc_list.append(fval)

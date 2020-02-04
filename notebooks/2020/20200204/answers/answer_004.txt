@@ -1,0 +1,3 @@
+# Answer
+PreStimbin = int(TorcObject['PreStimSilence'] * fs)
+PostStimbin = int(TorcObject['PostStimSilence'] * fs)

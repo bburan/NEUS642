@@ -1,0 +1,3 @@
+TorcNames = TorcObject['Names']
+# Answer
+TorcParams = dict.fromkeys(TorcNames)

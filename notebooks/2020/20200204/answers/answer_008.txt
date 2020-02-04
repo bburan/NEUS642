@@ -1,0 +1,4 @@
+# Answer
+TorcValues = {}
+for key, value in TorcParams.items():
+    TorcValues[key] = torcmaker(value, Params)
