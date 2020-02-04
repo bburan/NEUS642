@@ -1,3 +1,2 @@
-TorcNames = TorcObject['Names']
-# Answer
-TorcParams = dict.fromkeys(TorcNames)
+#Answer
+stacked = stacked[PreStimbin:-PostStimbin]

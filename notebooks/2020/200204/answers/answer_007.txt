@@ -1,11 +1,3 @@
-# Answer
-Params['T'] = T
-Params['numcomp'] = numcomp
-Params['basep'] = basep
-Params['leng'] = leng
-Params['stdur'] = stdur
-Params['mf'] = mf
-Params['xSize'] = xSize
-Params['tSize'] = tSize
-Params['mod_depth'] = mod_depth
-Params
+#Answer
+for torc_idx, torc in enumerate(TorcNames):
+    TorcParams[torc] = TorcObject["Params"][torc_idx + 1]

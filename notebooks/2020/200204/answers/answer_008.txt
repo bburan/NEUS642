@@ -1,4 +1,3 @@
 # Answer
-TorcValues = {}
-for key, value in TorcParams.items():
-    TorcValues[key] = torcmaker(value, Params)
+highest_frequency = TorcParams['TORC_448_LIN_01_h501']['HighestFrequency']
+lowest_frequency = TorcParams['TORC_448_LIN_01_h501']['LowestFrequency']

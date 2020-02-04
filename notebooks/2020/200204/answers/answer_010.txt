@@ -1,22 +1,11 @@
-def strfplot(strf,Params,smooth=0):
-    ylabels = []
-    freq = Params['lfreq']
-    for fff in range(Params['octaves']):
-        if fff != 0:
-            freq = freq * 2
-        ylabels.append(freq)
-    ticks = list([0,20,40,60,80])
-    if smooth:
-        smooth = [100, 250]
-        strfdata = interpft(interpft(strf,smooth[0], 0), smooth[1], 1)
-    else:
-        strfdata = strf
-        ticks = list([0,2,4,6,8,10,12,14])
-        ylabels = list([])
-    bf = best_frequency(strf,Params)
-  # Answer
-    plt.imshow(strfdata,aspect='auto',origin='lower')
-    plt.xlabel('Time Lag (ms)')
-    plt.ylabel('Frequency (Hz)')
-    plt.yticks(ticks=ticks,labels=ylabels)
-    plt.title('STRF - Best Frequency: {}'.format(bf), fontweight='bold')
+# Answer
+Params['T'] = T
+Params['numcomp'] = numcomp
+Params['basep'] = basep
+Params['leng'] = leng
+Params['stdur'] = stdur
+Params['mf'] = mf
+Params['xSize'] = xSize
+Params['tSize'] = tSize
+Params['mod_depth'] = mod_depth
+Params

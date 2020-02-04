@@ -1,0 +1,15 @@
+def plot_torc(torcs,number):
+    smooth = [100,250]
+    ticks = list([0,20,40,60,80,100])
+    labels = list([250,500,1000,2000,4000,8000])
+    if number > len(TorcValues) or number == 0:
+        print("That's not a real TORC!")
+        return
+    torc = 'TORC_448_LIN_{:02d}_h501'.format(number)
+    torcplot = interpft(interpft(torcs[torc], smooth[0], 0), smooth[1], 1)
+# Answer
+    plt.imshow(torcplot,aspect='auto',origin='lower')
+    plt.yticks(ticks=ticks,labels=labels)
+    plt.ylabel('Frequency (Hz)')
+    plt.xlabel('Time')
+    plt.title(torc,fontweight='bold')
