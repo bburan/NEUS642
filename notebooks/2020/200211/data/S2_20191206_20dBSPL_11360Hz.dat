@@ -1,0 +1,132 @@
+; Data generated for NEUS642
+; Licensed under CC BY 4.0
+; 
+; The data in this file was collected using a go-nogo task in which the
+; subject listens to a five-second tone. If they think they heard an
+; amplitude-modulation (i.e., a fluctuation in loudness/intensity of the
+; tone), they must provide a response (e.g., press a button). There is
+; one row per trial. The first column (depth) is the amount of
+; modulation (expressed as a percent) and the second column (response)
+; indicates whether the subject provided a response indicating they
+; thought they heard an amplitude-modulation (0 = no response, 1 =
+; response).
+depth,response
+35,1
+35,1
+50,1
+35,1
+50,1
+50,1
+35,1
+70,1
+25,1
+0,1
+0,0
+17,0
+0,0
+70,1
+35,1
+25,1
+70,1
+0,0
+0,0
+17,1
+50,1
+35,1
+17,0
+50,1
+0,0
+35,1
+17,0
+70,1
+0,0
+0,1
+0,0
+35,0
+25,1
+0,0
+35,1
+0,0
+70,1
+50,1
+17,0
+50,1
+0,0
+17,1
+0,0
+17,0
+70,1
+0,0
+17,0
+35,1
+0,1
+17,0
+70,1
+0,0
+17,0
+50,1
+0,0
+0,0
+35,0
+0,0
+17,1
+0,0
+70,1
+17,1
+0,0
+17,1
+0,1
+0,0
+25,1
+0,0
+50,1
+25,1
+0,0
+0,0
+70,1
+0,0
+0,0
+17,0
+35,1
+17,0
+25,1
+70,1
+0,0
+0,0
+25,0
+70,1
+50,1
+25,1
+0,0
+0,0
+50,1
+25,1
+50,1
+25,1
+0,1
+70,0
+50,1
+0,1
+0,0
+25,1
+0,0
+0,1
+0,1
+0,0
+0,0
+35,1
+50,1
+17,1
+70,1
+35,0
+17,0
+0,0
+50,1
+25,1
+17,1
+70,1
+0,1
+35,1
+0,0
+0,1
+; End of file
