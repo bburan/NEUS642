@@ -1,0 +1,3 @@
+# Answer
+figure, ax = plt.subplots(1, 1)
+ax

@@ -1,0 +1,6 @@
+filename = 'data/S0_20191122_20dBSPL_11360Hz.dat'
+
+# Answer
+import pandas as pd
+data = pd.read_csv(filename, comment=';')
+data.shape

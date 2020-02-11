@@ -1,0 +1,12 @@
+# Answer
+def load_data(subject, date, level=20, frequency=2840):
+    filename = f'data/S{subject}_{date}_{level}dBSPL_{frequency}Hz.dat'
+    data = pd.read_csv(filename, comment=';')
+    return data
+
+data = load_data(3, '20191127', 20, 2840)
+print(data.shape)
+
+# Bonus 1
+#data = load_data(3, '20191127')
+#print(data.shape)

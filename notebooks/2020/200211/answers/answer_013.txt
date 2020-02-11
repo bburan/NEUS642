@@ -1,0 +1,12 @@
+data = load_data(0, '20191126')
+figure, axes = plt.subplots(2, 3)
+
+# Answer
+ax = axes[0, 1]
+plot_data(data, ax)
+
+# Bonus 1
+figure, axes = plt.subplots(2, 3, figsize=(10, 7))
+ax = axes[0, 1]
+plot_data(data, ax)
+figure.tight_layout()  # Must come last!

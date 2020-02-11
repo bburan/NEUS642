@@ -1,0 +1,3 @@
+# Answer
+n = data.groupby('depth').size()
+n

@@ -1,0 +1,17 @@
+figure, ax = plt.subplots(1, 1)
+
+# Answer
+mean_response = data.groupby('depth')['response'].mean() * 100
+ax.plot(mean_response, 'o-')
+ax.set_xlabel('Modulation depth (%)')
+ax.set_ylabel('Percent response (%)')
+
+# Bonus 1
+#ax.grid()
+
+# Bonus 2
+#ax.spines['top'].set_visible(False)
+#ax.spines['right'].set_visible(False)
+
+# Bonus 3 (would replace the call to ax.plot above)
+#ax.plot(mean_response, 'o-', color='DarkSlateBlue')

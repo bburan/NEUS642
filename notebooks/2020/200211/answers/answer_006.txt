@@ -1,0 +1,27 @@
+x_values = mean_response.index.values
+y_values = mean_response.values
+
+# We're multiplying by 10 because this helps emphasize differences between the points.
+size = n.values*10
+
+# Answer
+figure, ax = plt.subplots(1, 1)
+ax.plot(x_values, y_values, '-')
+ax.scatter(x_values, y_values, size)
+ax.set_xlabel('Modulation depth (%)')
+ax.set_ylabel('Percent response (%)')
+
+# Bonus 1 (would replace the call to ax.scatter above)
+#ax.scatter(x_values, y_values, size, edgecolors='coral', linewidths=3)
+
+# Bonus 2
+#ax.axis(xmin=-10, xmax=110, ymin=-10, ymax=110)
+
+# Bonus 3
+#ax.grid()
+#ax.spines['top'].set_visible(False)
+#ax.spines['right'].set_visible(False)
+
+# Bonus 4
+#ax.set_xticks([0, 25, 50, 75, 100]);
+#ax.set_yticks([0, 25, 50, 75, 100]);

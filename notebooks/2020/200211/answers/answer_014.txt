@@ -1,0 +1,14 @@
+figure, axes = plt.subplots(2, 3, figsize=(10, 7))
+sessions = ['20191122', '20191125', '20191126']
+
+# Answer
+for i, session in enumerate(sessions):
+    ax = axes[0, i]
+    data = load_data(0, session)
+    plot_data(data, ax)
+    
+    data = load_data(1, session)
+    ax = axes[1, i]
+    plot_data(data, ax)
+    
+plt.tight_layout()

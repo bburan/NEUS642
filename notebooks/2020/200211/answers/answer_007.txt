@@ -1,0 +1,16 @@
+subject = 1
+date = '20191122'
+level = 60
+frequency = 2840
+
+# Answer (all give the same result)
+
+## Option 1: I'm a crotchety Matlab programmer 
+filename = 'data/S' + str(subject) + '_' + date + '_' + str(level) + 'dBSPL_' + str(frequency) + 'Hz.dat'
+
+## Option 2: I'm a retro coder
+filename = 'data/S{}_{}_{}dBSPL_{}Hz.dat'.format(subject, date, level, frequency)
+
+## Option 3: I'm a sleek, modern hacker
+filename = f'data/S{subject}_{date}_{level}dBSPL_{frequency}Hz.dat'
+filename

@@ -1,0 +1,12 @@
+# Answer
+figure, axes = plt.subplots(4, 3, figsize=(10, 10))
+sessions = ['20191122', '20191125', '20191126']
+subjects = [0, 1, 2, 3]
+
+for j, subject in enumerate(subjects):
+    for i, session in enumerate(sessions):
+        ax = axes[j, i]
+        data = load_data(j, session)
+        plot_data(data, ax)
+        
+plt.tight_layout()

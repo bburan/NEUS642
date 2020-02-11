@@ -1,0 +1,26 @@
+# Answer
+def plot_data(data, ax):
+    mean_response = data.groupby('depth')['response'].mean() * 100
+    x_values = mean_response.index.values
+    y_values = mean_response.values
+    
+    n = data.groupby('depth').size()
+    size = n.values * 10
+            
+    ax.plot(x_values, y_values, '-')
+    ax.scatter(x_values, y_values, size, edgecolors='coral', linewidths=3, norm=True)
+    ax.set_xlabel('Modulation depth (%)')
+    ax.set_ylabel('Percent response (%)')
+    ax.axis(xmin=-10, xmax=110, ymin=-10, ymax=110)
+    
+    ax.grid()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+    ax.set_xticks([0, 25, 50, 75, 100]);
+    ax.set_yticks([0, 25, 50, 75, 100]);
+
+
+data = load_data('0', '20191122', 40, 11360)
+figure, ax = plt.subplots(1, 1)
+plot_data(data, ax)

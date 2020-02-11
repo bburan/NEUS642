@@ -1,0 +1,3 @@
+# Answer
+print(axes.shape)
+print(axes.dtype)
