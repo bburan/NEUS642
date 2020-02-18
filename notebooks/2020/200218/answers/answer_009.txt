@@ -1,0 +1,7 @@
+# Answer (if statement)
+if len(poke_time) != len(cue_time):
+    cue_time = cue_time[:-1]
+
+# Alternatively you could do:
+if poke_time.size != cue_time.size:
+    cue_time = cue_time[:-1]

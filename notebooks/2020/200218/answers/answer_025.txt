@@ -1,0 +1,8 @@
+# Answer
+summary['Subject'] = df_file[0]
+summary['Date'] = df_file[1]
+summary['Type'] = df_file[2]
+
+# Bonus
+summary[['Subject', 'Date', 'Type']] = df_file
+summary

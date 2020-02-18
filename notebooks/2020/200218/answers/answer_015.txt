@@ -1,0 +1,7 @@
+# Answer (bonus)
+
+# Bonus 1
+reward_latency, reward = rewpoke_ave('data/Subj20_20191204_Ctrl.csv')
+
+# Bonus 2
+print(f'Reward-poke latency: {reward_latency:.1f}; Number of rewards: {reward}')

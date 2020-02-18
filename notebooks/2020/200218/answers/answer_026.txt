@@ -1,0 +1,3 @@
+# Answer
+grouping = summary.groupby(['Type', 'Date']).mean()
+grouping

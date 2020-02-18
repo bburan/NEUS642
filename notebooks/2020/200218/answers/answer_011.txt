@@ -1,0 +1,6 @@
+# Answer 
+cuepoke_ave = sum(cuepoke_lat)/len(cuepoke_lat)
+
+# or
+cuepoke_ave = cuepoke_lat.mean()
+cuepoke_ave

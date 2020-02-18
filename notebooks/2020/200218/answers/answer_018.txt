@@ -1,0 +1,16 @@
+poke_latencies = []
+reward_latencies = []
+rewards = []
+
+# Answer
+for dataset in datasets: 
+    poke_latency = cuepoke_ave(dataset)
+    poke_latencies.append(poke_latency)
+    
+    reward_latency, reward = rewpoke_ave(dataset)
+    reward_latencies.append(reward_latency)
+    rewards.append(reward)
+    
+print(poke_latencies)
+print(reward_latencies)
+print(rewards)

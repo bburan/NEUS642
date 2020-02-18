@@ -1,0 +1,16 @@
+# First, make a copy so we don't affect our original csv dataset when working on the bonus.
+csv_bonus = csv.copy()
+
+# Answer (bonuses)
+unique_states = csv_bonus['Transition State'].unique()
+display(unique_states)
+
+transition_state_map = {
+    1: 'cue onset',
+    2: 'nose poke',
+    4: 'reward recieved',
+}
+print(transition_state_map[1])
+
+csv_bonus['Transition State Name'] = csv_bonus['Transition State'].map(transition_state_map)
+csv_bonus.loc[:, ['Time', 'Transition State', 'Transition State Name']]

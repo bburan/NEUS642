@@ -1,0 +1,16 @@
+# Answer
+def cuepoke_ave(filename):
+    csv = pd.read_csv(filename)
+    cue_mask = csv['Transition State'] == 1
+    poke_mask = csv['Transition State'] == 2
+    cue = csv.loc[cue_mask]
+    poke = csv.loc[poke_mask]
+    poke_time = poke.loc[:,'Time']
+    cue_time = cue.loc[:,'Time']
+    if len(poke_time) != len(cue_time):
+        cue_time = cue_time[:-1]
+    cuepoke_lat = np.subtract(poke_time.values, cue_time.values)
+    cuepoke_ave = sum(cuepoke_lat)/len(cuepoke_lat)
+    return cuepoke_ave
+
+cuepoke_ave('data/Subj20_20191204_Ctrl.csv')

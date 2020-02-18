@@ -1,0 +1,6 @@
+# Answer (bonus)
+exp_datasets = glob('data/*Exp.csv')
+display(exp_datasets)
+
+s19_datasets = glob('data/Subj19*.csv')
+display(s19_datasets)

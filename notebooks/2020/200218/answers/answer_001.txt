@@ -1,0 +1,4 @@
+# Answer 
+filename = 'data/Subj02_20191204_Exp.csv' 
+csv = pd.read_csv(filename)
+csv

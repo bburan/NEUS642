@@ -1,0 +1,3 @@
+# Answer (subtract)
+cuepoke_lat = poke_time.values - cue_time.values
+cuepoke_lat

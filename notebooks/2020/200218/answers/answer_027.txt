@@ -1,0 +1,3 @@
+# Answer
+grouping_unstacked = grouping.unstack('Type')
+grouping_unstacked

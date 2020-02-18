@@ -1,0 +1,5 @@
+# Answer
+cue_mask = csv['Transition State'] == 1
+poke_mask = csv['Transition State'] == 2
+cue = csv.loc[cue_mask]
+poke = csv.loc[poke_mask]

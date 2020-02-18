@@ -1,0 +1,10 @@
+# Answer (bonus)
+data = {
+    'File': datasets,
+    'Ave CP Lat': poke_latencies,
+    'Ave PR Lat': reward_latencies,
+    'Total Rewards': rewards,
+    'Test Key': 'Test Value', 
+}
+bonus_summary = pd.DataFrame(data)
+bonus_summary

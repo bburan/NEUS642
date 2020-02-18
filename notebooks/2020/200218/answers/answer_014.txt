@@ -1,0 +1,17 @@
+# Answer
+def rewpoke_ave (filename):
+    csv = pd.read_csv(filename)
+    poke_mask = csv['Transition State'] == 2
+    rew_mask = csv['Transition State'] == 4
+    poke = csv.loc[poke_mask]
+    rew = csv.loc[rew_mask]    
+    poke_time = poke.loc[:,'Time']
+    rew_time = rew.loc[:,'Time']
+    countr = len(rew_time)
+    if len(rew_time) != len(poke_time):
+        poke_time = poke_time[:-1]
+    pokerew_lat = np.subtract(rew_time.values, poke_time.values)
+    pokerew_ave = sum(pokerew_lat)/len(pokerew_lat)
+    return pokerew_ave, countr
+
+rewpoke_ave('data/Subj20_20191204_Ctrl.csv')

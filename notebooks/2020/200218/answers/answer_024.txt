@@ -1,0 +1,6 @@
+# Answer
+df_file[2] = df_file[2].str.strip('.csv')
+
+# Bonus
+df_file[0] = df_file[0].str.strip('data/')
+df_file

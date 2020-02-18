@@ -1,0 +1,3 @@
+# Answer
+poke_latency = poke_time.values - cue_time.values
+poke_latency

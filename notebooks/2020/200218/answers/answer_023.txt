@@ -1,0 +1,3 @@
+# Answer
+df_file = summary['File'].str.split('_', expand=True)
+df_file

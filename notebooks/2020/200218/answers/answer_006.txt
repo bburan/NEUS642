@@ -1,0 +1,5 @@
+# Answer 
+poke_time = poke.loc[:,'Time']
+cue_time = cue.loc[:,'Time']
+print(poke_time)
+print(cue_time)

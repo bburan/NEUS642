@@ -1,0 +1,11 @@
+# Answer (bonus)
+
+# Bonus 1
+result = cuepoke_ave('data/Subj20_20191204_Ctrl.csv')
+sentence = 'Cue-poke latency: {:.2f}'.format(result)
+print(sentence)
+
+# Bonus 2
+result = cuepoke_ave('data/Subj20_20191204_Ctrl.csv')
+sentence = f'Cue-poke latency: {result:.2f}'
+print(sentence)

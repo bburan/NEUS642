@@ -1,0 +1,3 @@
+# Answer 
+csv.dropna(axis=1, how='all', inplace=True) 
+csv

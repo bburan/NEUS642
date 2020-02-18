@@ -1,0 +1,6 @@
+# Answer
+summary['File']  = datasets
+summary['Ave CP Lat'] = poke_latencies
+summary['Ave PR Lat'] = reward_latencies
+summary['Total Rewards'] = rewards
+summary
