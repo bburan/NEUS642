@@ -1,0 +1,19 @@
+#Answer:
+memory_plot, axes=plt.subplots(2,1)
+sense=axes[0]
+sense.plot(sim.trange(), sense_output)
+sense.set_title("Sensory Ensemble Activity")
+mem=axes[1]
+mem.plot(sim.trange(),mem_output)
+mem.set_title("Memory Ensemble Activity")
+
+memory_plot.tight_layout(pad=2.0)
+
+#If you did 3.1 Bonus:
+memory_plot_B, axes_B=plt.subplots(2,1)
+sense_B=axes_B[0]
+sense_B.plot(sim.trange(), sense_output_B)
+sense_B.set_title("Sensory Ensemble Activity")
+mem_B=axes_B[1]
+mem_B.plot(sim.trange(),mem_output_B)
+mem_B.set_title("Memory Ensemble Activity")

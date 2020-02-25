@@ -1,0 +1,6 @@
+#Answer:
+def input_func(t):
+    if 0 <t<0.5:
+        return 1
+    else:
+        return 0

@@ -1,0 +1,12 @@
+# Exercise 2.5 and bonus exercise 1 (optional) here:
+
+#Answer
+t = sim.trange()
+plt.subplot()
+plt.plot(t, sim.data[MF_probe], label="MF")
+plt.plot(t, sim.data[GoC_probe], label="GoC")
+plt.plot(t, sim.data[GC_probe], label="GC")
+plt.xlabel('time [s]')
+
+#Bonus exercise 1:
+plt.legend()

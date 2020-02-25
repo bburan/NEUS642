@@ -1,0 +1,4 @@
+# Answer
+with open('my_data.txt', 'w') as file:
+    file.write('Hello World!')
+    file.write('The answer is: {}'.format(1/0))

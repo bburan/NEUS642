@@ -1,0 +1,7 @@
+# Answer
+plt.subplot(111)
+plt.plot(sim.trange(), neuron_voltage[:, 0])
+
+# Bonus:
+plt.plot(sim.trange(), neuron_voltage[:, 0], 'r')
+plt.xlim(.2, .6)

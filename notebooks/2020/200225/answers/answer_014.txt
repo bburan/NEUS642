@@ -1,0 +1,6 @@
+with model:
+# Answer
+    # The raw spikes from the neuron
+    spikes = nengo.Probe(single.neurons, label='spikes')
+    # Subthreshold soma voltage of the neuron
+    voltage = nengo.Probe(single.neurons, label='voltage')

@@ -1,0 +1,6 @@
+# Answer
+FFI_model = nengo.Network()
+
+with FFI_model:
+    GoC = nengo.Ensemble(100, dimensions=1)
+    GC = nengo.Ensemble(100, dimensions=1)

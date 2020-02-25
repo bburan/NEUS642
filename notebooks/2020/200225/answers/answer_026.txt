@@ -1,0 +1,13 @@
+#Answer:
+mem_model = nengo.Network()
+with mem_model:
+    stim_a = nengo.Node(input_func)
+    sensory = nengo.Ensemble(n_neurons=50, dimensions=1)
+    nengo.Connection(stim_a, sensory)
+    
+    memory = nengo.Ensemble(n_neurons=50, dimensions=1)
+    nengo.Connection(memory, memory, synapse=0.1)
+    nengo.Connection(sensory, memory, transform=0.1)
+    
+    mem_p = nengo.Probe(memory)
+    sense_p = nengo.Probe(sensory)

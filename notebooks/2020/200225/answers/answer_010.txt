@@ -1,0 +1,3 @@
+with model:
+# Answer    
+    cos_probe = nengo.Probe(cos_input)

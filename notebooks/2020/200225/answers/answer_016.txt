@@ -1,0 +1,9 @@
+# Answer
+plt.subplot(111)
+plt.plot(sim.trange(), neuron_value)
+plt.plot(sim.trange(), stim_value)
+
+#Bonus:
+plt.plot(sim.trange(), neuron_value, 'b')
+plt.plot(sim.trange(), stim_value, 'g')
+plt.xlabel('Time')

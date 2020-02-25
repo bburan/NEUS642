@@ -1,0 +1,6 @@
+with model:
+# Answer
+    cos_input = nengo.Node(lambda i: np.cos(8 * i))
+    
+# Bonus:
+    cos_input = nengo.Node(lambda i: np.cos(8 * i), label='Single Input')

@@ -1,0 +1,5 @@
+#Answer
+with FFI_model:
+    MF_probe = nengo.Probe(MF_input, synapse=0.01)
+    GoC_probe = nengo.Probe(GoC, synapse=0.01)
+    GC_probe = nengo.Probe(GC, synapse=0.01)

@@ -1,0 +1,6 @@
+# Answer
+plt.subplot(111)
+rasterplot(sim.trange(), neuron_spikes)
+plt.xlabel('Time')
+plt.ylabel('Single Neuron')
+plt.xlim(.2, .6)

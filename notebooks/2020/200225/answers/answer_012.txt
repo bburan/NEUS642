@@ -1,0 +1,4 @@
+# Answer
+with model:
+    # Spikes filtered by a 10ms post-synaptic filter
+    filtered = nengo.Probe(single, 'decoded_output', synapse=0.01)

@@ -1,0 +1,5 @@
+# Answer:
+stim_value=sim.data[cos_probe]
+neuron_value=sim.data[filtered]
+neuron_spikes=sim.data[spikes]
+neuron_voltage=sim.data[voltage]

@@ -1,0 +1,2 @@
+# Answer
+fn = lambda x: x*2

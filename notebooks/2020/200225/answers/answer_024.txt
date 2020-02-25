@@ -1,0 +1,38 @@
+# Bonus exercise 2 here:
+# Answer
+
+# Create the new model
+FFI_model2 = nengo.Network()
+
+with FFI_model2:
+    GoC = nengo.Ensemble(100, dimensions=1)
+    GC = nengo.Ensemble(100, dimensions=1)
+    MF_input = nengo.Node(1)
+    NE_input = nengo.Node(0.25)
+
+# Connect circuit elements     
+with FFI_model2:
+    nengo.Connection(MF_input, GoC, function=inhibition)
+    nengo.Connection(MF_input, GC)
+    nengo.Connection(GoC, GC)
+    nengo.Connection(NE_input, GoC)
+
+# Probe output    
+with FFI_model2:
+    MF_probe = nengo.Probe(MF_input, synapse=0.01)
+    GoC_probe = nengo.Probe(GoC, synapse=0.01)
+    GC_probe = nengo.Probe(GC, synapse=0.01)
+    
+# Run simulation
+with nengo.Simulator(FFI_model2) as sim:
+     sim.run(1)
+        
+# Plot results
+t = sim.trange()
+plt.subplot()
+plt.plot(t, sim.data[MF_probe], label="MF")
+plt.plot(t, sim.data[GoC_probe], label="GoC")
+plt.plot(t, sim.data[GC_probe], label="GC")
+plt.legend()
+plt.xlabel('time [s]');
+        
