@@ -1,8 +1,3 @@
 with model:
-    #single = nengo.Ensemble(n_neurons=1, dimensions=1)
-    #intercepts=Uniform(-.5, -.5),
-    #max_rates=Uniform(100, 100),
-    #encoders=[[1]]
-    #cos_input = nengo.Node(lambda i: np.cos(8 * i))
 # Answer    
     nengo.Connection(cos_input, single)
