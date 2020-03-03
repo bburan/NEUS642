@@ -1,0 +1,4 @@
+# Answer
+slope, intercept = np.polyfit(iso1, green1, 1)
+print(slope)
+print(intercept)

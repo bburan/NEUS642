@@ -1,0 +1,4 @@
+# Answer
+n = green1_raw.shape[-1]
+time = np.arange(n) / fs
+time

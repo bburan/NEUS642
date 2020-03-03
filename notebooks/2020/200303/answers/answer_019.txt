@@ -1,0 +1,3 @@
+# Answer
+for segment in segments:
+    print(f'Segment {segment}')

@@ -1,0 +1,18 @@
+# Answer
+pos_heights = pos_info['peak_heights']
+neg_heights = neg_info['peak_heights']
+n_pos = len(pos_heights)
+n_neg = len(neg_heights)
+n_total = n_pos + n_neg
+
+mean_pos_height = np.mean(pos_heights)
+mean_neg_height = np.mean(neg_heights)
+
+peakmetrics = [
+    n_pos,
+    n_neg,
+    n_total,
+    mean_pos_height,
+    mean_neg_height,
+]
+print(peakmetrics)

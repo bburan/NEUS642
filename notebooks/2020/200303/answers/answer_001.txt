@@ -1,0 +1,4 @@
+# Answer
+user_input = input('Type Something!')
+print(user_input)
+print(type(user_input))

@@ -1,0 +1,6 @@
+# Answer
+%matplotlib qt
+plt.plot(time , green1, color='g', label='green1')
+plt.plot(time, scaledisodata, color='b', label='iso1 (scaled)')
+plt.plot(time, iso1, color='r', label='iso1 (unscaled)')
+plt.legend()

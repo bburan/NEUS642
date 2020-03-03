@@ -1,0 +1,6 @@
+# Answer
+cols = 16
+rows = int(len(green1_raw) / 16)
+green1_reshaped = green1_raw.reshape((rows, cols))
+green1 = green1_reshaped.mean(axis=1)
+green1.shape

@@ -1,0 +1,2 @@
+# Answer
+indices, _ = scipy.signal.find_peaks(ff_clean)

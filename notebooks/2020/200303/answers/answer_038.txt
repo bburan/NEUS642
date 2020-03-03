@@ -1,0 +1,4 @@
+# Answer
+peaks
+#When we specify a minimum amplitude we get a new dictionary added to our output. Not only do we get a location of the peaks. 
+#We get all the peak heights for that analysis. Keep this in mind when we pull out some basic metrics from our peak analysis.

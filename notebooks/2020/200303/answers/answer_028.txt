@@ -1,0 +1,3 @@
+# Answer
+minamp = np.mean(ff_clean) + np.std(ff_clean) * 1.96
+minamp

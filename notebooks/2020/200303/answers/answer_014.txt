@@ -1,0 +1,2 @@
+# Answer
+scaledisodata = iso1 * slope + intercept

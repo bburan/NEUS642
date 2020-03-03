@@ -1,0 +1,2 @@
+# Answer
+green1_raw = np.load(datafile) 

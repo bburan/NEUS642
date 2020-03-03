@@ -1,0 +1,5 @@
+# Answer (bonus)
+with open('Peak_Analysis.csv', 'w') as file:
+    wr=csv.writer(file,lineterminator='\n')
+    wr.writerow(['Pos Peaks', 'Neg Peaks','Total Peaks','Pos Avg', 'Neg Avg'])        
+    wr.writerow(peakmetrics)

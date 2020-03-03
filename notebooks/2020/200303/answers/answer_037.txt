@@ -1,0 +1,12 @@
+# Answer
+peaks = scipy.signal.find_peaks(deltaarray, height=minamp, distance=63)
+negpeaks = scipy.signal.find_peaks(-deltaarray, height=minamp, distance=63)
+
+#plot
+plt.plot(deltaarray)
+plt.plot(peaks[0], deltaarray[peaks[0]],"x", label = "Pos Peaks")
+plt.plot(negpeaks[0], deltaarray[negpeaks[0]],"o",color='g',label="Neg Peaks")
+plt.title('Peak Analysis - 1.96 STDevs - One Second')
+plt.xlabel('Sample')
+plt.ylabel('Delta F')
+plt.legend(loc='upper right')

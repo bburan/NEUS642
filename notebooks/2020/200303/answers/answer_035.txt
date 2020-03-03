@@ -1,0 +1,11 @@
+# Answer
+minamp = np.mean(deltaarray) + (np.std(deltaarray) * 1.96)
+peaks = scipy.signal.find_peaks(deltaarray, height=minamp)
+
+#plot it
+plt.plot(deltaarray)
+plt.plot(peaks[0], deltaarray[peaks[0]], "x",label="Peak")
+plt.title('Peak Analysis - 1.96 STDevs')
+plt.xlabel('Sample')
+plt.ylabel('Delta F')
+plt.legend(loc='upper right')

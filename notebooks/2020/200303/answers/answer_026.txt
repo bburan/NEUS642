@@ -1,0 +1,2 @@
+# Answer
+ff_peak = ff_clean[indices]

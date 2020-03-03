@@ -1,0 +1,4 @@
+# Answer
+with open('Peak_Analysis.csv', 'w') as file:
+    wr = csv.writer(file,lineterminator='\n')   
+    wr.writerow(peakmetrics)

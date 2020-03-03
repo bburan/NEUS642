@@ -1,0 +1,15 @@
+# Answer
+%matplotlib inline 
+fig, axs = plt.subplots(nrows=1, ncols=2)
+
+axs[0].plot(time, green1,'tab:green')
+axs[0].plot(time, scalediso1,'tab:blue')
+axs[0].set_title('Both Streams (Channel 1)')
+axs[0].set_xlabel('Seconds')
+axs[0].set_ylabel('Volts')
+axs[0].legend("GI",loc='best')
+
+axs[1].plot(ff_time, ff, 'tab:orange')
+axs[1].set_ylabel('Delta F')
+axs[1].set_xlabel('Seconds')
+axs[1].set_title('Delta F (Channel 1)')

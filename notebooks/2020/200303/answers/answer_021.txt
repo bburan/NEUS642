@@ -1,0 +1,4 @@
+# Answer
+plt.plot(time, green1, color='g')
+plt.plot(time, scalediso1, color='b')
+plt.plot(time, scaledisodata, color='r')

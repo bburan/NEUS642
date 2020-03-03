@@ -1,0 +1,3 @@
+# Answer
+segment_size = 150 * samplerate
+segment_size

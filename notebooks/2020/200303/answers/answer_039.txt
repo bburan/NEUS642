@@ -1,0 +1,8 @@
+# Answer
+poscount = len(peaks[0][0:])
+negcount = len(negpeaks[0][0:])
+totalcount = poscount + negcount
+posav = np.mean(peaks[1]["peak_heights"])
+negav = np.mean(negpeaks[1]["peak_heights"])
+
+peakmetrics = [poscount, negcount, totalcount, posav, negav]

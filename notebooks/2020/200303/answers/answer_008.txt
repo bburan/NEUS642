@@ -1,0 +1,5 @@
+# Answer
+iso1_raw = np.load('iso1.npy')
+iso1_reshaped = iso1_raw.reshape((rows, cols))
+iso1 = iso1_reshaped.mean(axis=1)
+iso1.shape

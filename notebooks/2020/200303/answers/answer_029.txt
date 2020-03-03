@@ -1,0 +1,10 @@
+# Answer
+pos_indices, _ = scipy.signal.find_peaks(ff_clean, height=minamp)
+
+#plot it
+plt.plot(ff_clean)
+plt.plot(pos_indices, ff_clean[pos_indices], "x",label="Peak")
+plt.title('Peak Analysis - 1.96 STDevs')
+plt.xlabel('Sample')
+plt.ylabel('Delta F')
+plt.legend(loc='upper right')

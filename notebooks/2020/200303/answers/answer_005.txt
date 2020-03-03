@@ -1,0 +1,5 @@
+a = np.array([3, 5, 4, 6, 5, 7, 6, 8])
+
+# Answer
+ar = a.reshape((4, 2))
+print(ar)

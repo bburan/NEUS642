@@ -1,0 +1,9 @@
+# First, plot our delta fluorescence
+plt.plot(ff_clean)
+
+# Answer
+plt.plot(indices, ff_peak, "x", label="Peak")
+plt.title('Peak Analysis')
+plt.xlabel('Sample')
+plt.ylabel('Delta F')
+plt.legend(loc="upper right")

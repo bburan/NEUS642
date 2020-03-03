@@ -1,0 +1,3 @@
+# Answer
+print(type(green1_raw))
+print(green1_raw.shape)

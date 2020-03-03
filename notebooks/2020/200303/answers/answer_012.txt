@@ -1,0 +1,3 @@
+# Answer 
+plt.plot(time, green1, color='g')
+plt.plot(time, iso1, color='b')

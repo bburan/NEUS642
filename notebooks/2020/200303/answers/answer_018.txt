@@ -1,0 +1,2 @@
+# Answer
+scalediso1 = np.empty_like(green1)

@@ -1,0 +1,2 @@
+# Answer
+print(ar.mean(axis=1))

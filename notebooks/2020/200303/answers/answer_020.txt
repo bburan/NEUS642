@@ -1,0 +1,8 @@
+# Answer
+for segment_number in range(n_segments):
+    start = segment_size * segment_number
+    end = start + segment_size
+    gdata = green1[start:end]
+    idata = iso1[start:end]
+    slope, intercept = np.polyfit(idata, gdata, 1)
+    scalediso1[start:end] = idata * slope + intercept

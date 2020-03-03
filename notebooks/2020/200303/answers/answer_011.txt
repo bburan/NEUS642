@@ -1,0 +1,9 @@
+# Answer
+
+# Option 1
+samplerate = int(1 / (time[1] - time[0]))
+samplerate
+
+# Option 2
+samplerate  = int(fs / 16)
+samplerate
