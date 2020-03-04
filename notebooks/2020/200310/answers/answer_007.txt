@@ -1,0 +1,4 @@
+# Answer
+nan_mask = np.isnan(trial)
+valid_mask = ~nan_mask
+print(valid_mask)

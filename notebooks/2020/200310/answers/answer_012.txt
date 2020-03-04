@@ -1,0 +1,9 @@
+# Answer
+def interp_trial(trial, time):
+    nan_mask = np.isnan(trial)
+    valid_mask = ~nan_mask
+    x = time[valid_mask]
+    y = trial[valid_mask]
+    interpolator = interpolate.interp1d(x, y, fill_value='extrapolate')
+    trial_interp = interpolator(time)
+    return trial_interp

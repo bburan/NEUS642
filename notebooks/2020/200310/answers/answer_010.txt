@@ -1,0 +1,13 @@
+# Answer
+interpolator = interpolate.interp1d(x, y, fill_value='extrapolate')
+trial_interp = interpolator(time)
+plt.plot(time, trial_interp, lw=4, label='linear')
+
+# Bonus
+interpolator = interpolate.interp1d(x, y, kind='nearest', fill_value='extrapolate')
+trial_interp = interpolator(time)
+plt.plot(time, trial_interp, lw=4, label='nearest')
+plt.axis(xmin=0, xmax=5)
+
+plt.plot(time, trial, lw=1, label='uninterpolated')
+plt.legend()

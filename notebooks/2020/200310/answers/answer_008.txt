@@ -1,0 +1,4 @@
+# Answer (bonus)
+n_missing = np.sum(nan_mask)
+pct_missing = np.mean(nan_mask) * 100
+print(f'{n_missing} values missing ({pct_missing:.0f}% of array)')

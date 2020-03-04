@@ -1,0 +1,9 @@
+# Answer
+data_filt = signal.filtfilt(b, a, data_interp, axis=1)
+
+vmin = min(data_interp.min(), data_filt.min())
+vmax = max(data_interp.max(), data_filt.max())
+figure, (ax1, ax2) = plt.subplots(1, 2)
+ax1.imshow(data_interp, vmin=vmin, vmax=vmax, extent=extent, aspect='auto')
+img = ax2.imshow(data_filt, vmin=vmin, vmax=vmax, extent=extent, aspect='auto')
+plt.colorbar(img)

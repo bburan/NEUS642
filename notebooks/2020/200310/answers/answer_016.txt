@@ -1,0 +1,3 @@
+# Answer
+left = data_filt[:48,:]
+right = data_filt[48:,:]

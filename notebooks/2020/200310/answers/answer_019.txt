@@ -1,0 +1,8 @@
+# Answer
+plt.plot(time, average_75, 'b', label='75%')
+plt.plot(time, average_66, 'g', label='66%')
+plt.axvline(x=7, color='k', linestyle='--')
+plt.axvline(x=8.5, color='k')
+plt.xlabel('Time (sec)')
+plt.ylabel ('Pupil Dilation (mm)')
+plt.legend()

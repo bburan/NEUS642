@@ -1,0 +1,6 @@
+# Answer
+x=time[valid_mask]
+y=trial[valid_mask]
+plt.plot(x, y, label='NaN values removed')
+plt.plot(time, trial, label='With NaN values')
+plt.legend()

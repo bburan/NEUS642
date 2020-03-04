@@ -1,0 +1,10 @@
+# Answer
+average = (left + right)/ 2
+average.shape
+
+# Bonus answer
+data_filt_rs = data_filt.reshape((2, 48, -1))
+print(data_filt_rs.shape)
+# data_filt_rs[0] contains left eye
+# data_filt_rs[1] contains right eye
+average = data_filt_rs.mean(axis=0)

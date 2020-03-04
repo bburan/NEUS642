@@ -1,0 +1,3 @@
+# Answer
+trial = data[0, :]
+plt.plot(trial)

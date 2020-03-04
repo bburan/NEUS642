@@ -1,0 +1,4 @@
+# Answer
+data_filt_mean = np.mean(data_filt, axis=0)
+plt.plot(time, data_filt_mean)
+plt.axvline(8.5, ls=':')

@@ -1,0 +1,14 @@
+# Answer
+trial_filt = signal.filtfilt(b, a, trial_interp)
+plt.plot(time, trial_filt, label='5 Hz lowpass')
+plt.plot(time, trial_interp, label='unfiltered')
+plt.axis(xmin=0, xmax=5)
+
+# Bonus
+cutoff_frequency = 2.5
+Wn = cutoff_frequency * period * 2
+bn, an = signal.iirfilter(2, Wn, btype='lowpass')
+trial_filt_n = signal.filtfilt(bn, an, trial_interp)
+plt.plot(time, trial_filt_n, label='0.5 Hz lowpass')
+
+plt.legend()

@@ -1,0 +1,12 @@
+# Answer
+compression_75 = average[:24,:]
+compression_66 = average[24:,:]
+average_75= np.mean(compression_75, axis=0)
+average_66= np.mean(compression_66, axis=0)
+
+average_75.shape
+average_66.shape
+
+# Bonus
+average_rs = average.reshape((2, 24, -1))
+tcd_average = average_rs.mean(axis=1)

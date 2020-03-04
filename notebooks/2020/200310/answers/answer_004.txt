@@ -1,0 +1,5 @@
+# Answer
+period = 5e-3
+n = len(trial)
+indices = np.arange(n)
+time = indices * period

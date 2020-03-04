@@ -1,0 +1,7 @@
+# Answer
+
+# Extents are x_start, x_end, y_start, y_end
+extent = (0, 16.5, 0, 96)
+figure, (ax1, ax2) = plt.subplots(1, 2)
+ax1.imshow(data, aspect='auto', extent=extent)
+ax2.imshow(data_interp, aspect='auto', extent=extent)

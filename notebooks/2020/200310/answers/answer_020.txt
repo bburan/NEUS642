@@ -1,0 +1,14 @@
+# Answer
+data_filt_rs = data_filt.reshape((2, 2, 24, -1))
+average = np.mean(data_filt_rs, axis=2)
+print(average.shape)
+
+plt.plot(time, average[0, 0], 'b', label='75% (left)')
+plt.plot(time, average[0, 1], 'g', label='66% (left)')
+plt.plot(time, average[1, 0], 'b:', label='75% (right)')
+plt.plot(time, average[1, 1], 'g:', label='66% (right)')
+plt.axvline(x=7, color='k', linestyle='--')
+plt.axvline(x=8.5, color='k')
+plt.xlabel('Time (sec)')
+plt.ylabel ('Pupil Dilation (mm)')
+plt.legend()

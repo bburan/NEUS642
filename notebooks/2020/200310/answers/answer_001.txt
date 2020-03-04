@@ -1,0 +1,5 @@
+# Answer
+data = np.load('pupillometry.npy')
+
+print(data.shape)
+print(data.dtype)
