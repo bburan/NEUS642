@@ -1,0 +1,4 @@
+# Answer
+import numpy as np
+found_primes = np.array(found_primes)
+x = found_primes + 5

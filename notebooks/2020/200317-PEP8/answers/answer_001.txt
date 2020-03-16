@@ -1,0 +1,26 @@
+# Answer
+def add(value_one, value_two):
+    """Adds two numbers together."""
+    value_three = value_one + value_one
+    return value_three
+
+def calculate(value_one, value_two, operator):
+    """Calculator function, attempts to parse `s` to determine what op to run.
+    
+    :param value_one: The first number for the calculator.
+    :param value_two: The second number for the calculator.
+    :param op: The operation to do on the two numbers.
+    """
+    if operator =='+':
+        add(value_one, value_two)
+    elif operator == '-':
+        return value_one - value_two
+    # function can accept either value for multiplication
+    elif operator == '*' or operator == 'x':
+        return value_one * value_two
+    elif operator =='/':
+        return a/b
+    elif operator == '^':
+        return a ** b
+    else:  # out of operation, raise an error
+        raise ValueError(f'Could not recognize operator "{s}".')
